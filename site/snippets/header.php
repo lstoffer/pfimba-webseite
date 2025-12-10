@@ -5,6 +5,7 @@ $headerImage = $page->headerImage()->toFile();
 ?>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?= css([ // IMPORTANT: Oder matters
         '/assets/css/fonts.css',
         '/assets/fontawesome/css/all.min.css',
@@ -32,5 +33,4 @@ $headerImage = $page->headerImage()->toFile();
 
 </header>
 
-<body id="page">
-    
+<div id="page">

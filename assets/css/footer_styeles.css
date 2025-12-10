@@ -29,37 +29,50 @@ footer a.mail-link {
     color: white;
 }
 
-.footer.col1 {
-    width: 25%;
-    float: left;
+#footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 1fr;
+    gap: 3rem;
 }
 
-.footer.col2 {
-    width: 20%;
-    float: left;
-}
-
-.footer.col3 {
-    width: 20%;
-    float: left;
-}
-
-.footer.col4 {
-    width: 35%;
-    float: right;
+.footer {
+    float: none;
 }
 
 .footer-logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 2rem;
     justify-items: center;
     align-items: center;
 }
 
 .footer-logos img {
-    height: auto;
     max-height: 100px;
     width: 100%;
+    height: auto;
     display: block;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-logos {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logos {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
 }

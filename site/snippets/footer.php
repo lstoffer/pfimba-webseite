@@ -1,4 +1,4 @@
-</body>
+</div>
 
 <footer id="footer">
   
@@ -44,19 +44,19 @@
     </div>
 
     <div class="footer-logos">
-        <a href="">
+        <a href="https://pfadi.swiss">
             <img src="<?= url('/assets/images/logo/Pfadibewegung_Schweiz_Logo_negativ_digital.png') ?>" alt="pbs">
         </a>
 
-        <a href="">
+        <a href="https://www.pfadi-sgarai.ch/">
             <img src="<?= url('/assets/images/logo/kvlogo_3.png') ?>" alt="sgarai">
         </a>
 
-        <a href="">
+        <a href="https://www.jugendundsport.ch">
             <img src="<?= url('/assets/images/logo/J+S_d_f_neg.png') ?>" alt="j+s">
         </a>
 
-        <a href="">
+        <a href="https://www.hajk.ch">
             <img src="<?= url('/assets/images/logo/hajk_logo.png') ?>" alt="hajk">
         </a>
     </div>
