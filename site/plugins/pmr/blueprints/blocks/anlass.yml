@@ -1,0 +1,14 @@
+preview: fields
+wysiwyg: true
+type: anlass
+label: Anlass
+fields:
+  name:
+    label: Name
+    type: text
+  verantwortung:
+    label: Verantwortung
+    type: text
+  datum:
+    label: Datum
+    type: date

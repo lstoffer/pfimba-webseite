@@ -1,0 +1,46 @@
+title: Seite
+extends: options/base_options
+
+columns:
+  main:
+    width: 2/3
+    sections:
+      fields:
+        type: fields
+        fields:
+          pageSettings:
+            label: Seiten Einstellungen
+            type: headline
+
+          headerImage:
+            label: Header Image
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              parent: page.images
+              accept:
+                extension: [jpg, jpeg, png, webp]
+
+          headerLine:
+            label: Header Linie
+            type: select
+            options:
+              abteilung: Abteilung
+              biber: Biber
+              woelfe: Wölfe
+              pfadis: Pfadis
+              pios: Pios
+              rover: Rover
+
+          line:
+            type: line
+
+  sidebar:
+    width: 1/3
+    sections:
+      pages:
+        type: pages
+        label: Unterseiten
+      files:
+        type: files

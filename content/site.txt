@@ -1,1 +1,41 @@
 Title: Site Title
+
+----
+
+Footertext: 
+
+----
+
+Footercontact:
+
+- 
+  name: Luc Stoffer
+  strasse: Rütistrasse 27
+  wohnhort: 9443 Widnau
+  email: uelae@pfimba.ch
+
+----
+
+Footerlinks:
+
+- 
+  label: Impressum
+  link:
+    - page://w3unpqnv7jwukcex
+- 
+  label: Datenschutz
+  link:
+    - page://62sg0qgnrpvnbrzk
+
+----
+
+Socialmedialinks:
+
+- 
+  label: Instagram
+  url: >
+    https://www.instagram.com/pfadi_mittelrheintal/
+- 
+  label: Facebook
+  url: >
+    https://www.facebook.com/Pfadi-Mittelrheintal-169853803690006

@@ -1,0 +1,71 @@
+preview: fields
+wysiwyg: true
+type: aktivitaet
+label: Aktivität
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: false
+
+  datum:
+    label: Datum
+    type: date
+    required: true
+
+  stufen:
+    label: Stufen
+    type: multiselect
+    min: 1
+    options:
+      biber: Biber
+      woelfe: Wölfe
+      pfadis: Pfadis
+      pios: Pios
+      rover: Rover
+    required: true
+
+  info:
+    label: Zusatzinformation
+    type: text
+    required: false
+
+  besammlung:
+    label: Besammlung
+    type: text
+    required: true
+  
+  besammlungsort:
+    label: Besammlungsort (Link)
+    type: link
+    required: false
+
+  schluss:
+    label: Schluss
+    type: text
+    required: true
+
+  schlussort:
+    label: Schlussort (Link)
+    type: link
+    required: false
+  
+  mitnehmen:
+    label: Mitnehmen
+    type: text
+    required: true
+
+  leitperson:
+    label: Leiter Name
+    type: text
+    required: true
+
+  email_leitperson:
+    label: Leiter Email
+    type: email
+    required: false
+
+  telefon_leitperson:
+    label: Leiter Telefon
+    type: tel
+    required: false

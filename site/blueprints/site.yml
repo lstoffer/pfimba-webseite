@@ -1,5 +1,58 @@
 title: Site
 
-sections:
+tabs:
   pages:
-    type: pages
+    label: Seiten
+    sections:
+      pages:
+        type: pages
+        headline: Seiten
+        sortable: true
+
+  footer:
+    label: Footer
+    sections:
+      footerfields:
+        type: fields
+        fields:
+          footerText:
+            label: Footer Text
+            type: textarea
+
+          footerContact:
+            label: Kontakt
+            type: structure
+            max: 1
+            min: 1
+            fields:
+              name:
+                type: text
+                required: true
+              strasse:
+                type: text
+                required: true
+              wohnhort:
+                type: text
+                required: true
+              email:
+                type: email
+                required: true
+
+          footerLinks:
+            label: Weitere Links
+            type: structure
+            fields:
+              label:
+                type: text
+              link:
+                label: Seite
+                type: pages
+
+          socialMediaLinks:
+            label: Social Media Links
+            type: structure
+            fields:
+              label:
+                type: text
+              url:
+                type: url

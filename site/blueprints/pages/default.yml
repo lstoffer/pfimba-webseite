@@ -1,4 +1,5 @@
 title: Default Page
+extends: options/base_options
 
 columns:
   main:
@@ -7,6 +8,16 @@ columns:
       fields:
         type: fields
         fields:
+          headerImage:
+            label: Header Image
+            type: files
+            max: 1
+            layout: cards
+            uploads:
+              parent: page
+              accept:
+                extension: [jpg, jpeg, png, webp]
+
           text:
             type: textarea
             size: huge
@@ -15,7 +26,7 @@ columns:
     sections:
       pages:
         type: pages
-        template: default
+        label: Unterseiten
       files:
         type: files
 

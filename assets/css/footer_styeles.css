@@ -1,0 +1,65 @@
+
+footer {
+    position: relative;
+    padding: 4%;
+    background-color: var(--color-abteilung);
+    height: 350px;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    top: -25px; 
+    height: 40px;
+    background-image: url("/assets/images/striche/00_abteilung_strich.png");
+    background-size: auto 40px;
+    pointer-events: none;
+}
+
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer a.external-link,
+footer a.download-link,
+footer a.mail-link {
+    color: white;
+}
+
+.footer.col1 {
+    width: 25%;
+    float: left;
+}
+
+.footer.col2 {
+    width: 20%;
+    float: left;
+}
+
+.footer.col3 {
+    width: 20%;
+    float: left;
+}
+
+.footer.col4 {
+    width: 35%;
+    float: right;
+}
+
+.footer-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-logos img {
+    height: auto;
+    max-height: 100px;
+    width: 100%;
+    display: block;
+}

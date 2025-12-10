@@ -1,0 +1,38 @@
+Title: Jahresprogramm
+
+----
+
+Headerimage: 
+
+----
+
+Headerline: 
+
+----
+
+Aktivitaeten:
+
+[
+    {
+        "content": {
+            "name": "",
+            "verantwortung": "",
+            "datum": ""
+        },
+        "id": "b2b062b0-95ee-402f-b55c-0fa3a13b0a81",
+        "isHidden": false,
+        "type": "anlass"
+    }
+]
+
+----
+
+Text: 
+
+----
+
+Uuid: mvq5nyzsti0nrqsu
+
+----
+
+Lock: FbBgLwiG

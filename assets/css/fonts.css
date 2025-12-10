@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "SuisseIntl Regular";
+  src: url("/assets/fonts/suisse_intl/SuisseIntl-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SuisseIntl Bold";
+  src: url("/assets/fonts/suisse_intl/SuisseIntl-Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SuisseIntl SemiBold";
+  src: url("/assets/fonts/suisse_intl/SuisseIntl-SemiBold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SuisseIntl Thin";
+  src: url("/assets/fonts/suisse_intl/SuisseIntl-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SuisseNeue Light";
+  src: url("/assets/fonts/suisse_neue/SuisseNeue-Light.otf") format("opentype");
+}
