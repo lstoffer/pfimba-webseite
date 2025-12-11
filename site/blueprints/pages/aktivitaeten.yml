@@ -16,11 +16,14 @@ columns:
           inhalt:
             label: Inhalt
             type: headline
-          aktivitaeten:
+          
+          inhaltselemente:
+            label: Inhaltselemente
             type: blocks
             pretty: true
             fieldsets:
-              - aktivitaet
+              - one_col
+              - two_col
   
   sidebar:
     width: 1/3

@@ -1,6 +1,7 @@
+type: leiter
+title: Leiter
 preview: fields
 wysiwyg: true
-type: leiter
 fields:
   foto:
     label: Foto

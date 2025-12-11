@@ -1,12 +1,12 @@
+type: aktiviteat
+title: Aktivität
 preview: fields
 wysiwyg: true
-type: aktivitaet
-label: Aktivität
 fields:
   titel:
     label: Titel
     type: text
-    required: false
+    required: true
 
   datum:
     label: Datum
@@ -63,7 +63,7 @@ fields:
   email_leitperson:
     label: Leiter Email
     type: email
-    required: false
+    required: true
 
   telefon_leitperson:
     label: Leiter Telefon

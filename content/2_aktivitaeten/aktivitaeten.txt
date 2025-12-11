@@ -10,7 +10,51 @@ Headerline: abteilung
 
 ----
 
-Aktivitaeten: 
+Inhaltselemente:
+
+[
+    {
+        "content": {
+            "spalteninhalt": "[{\"content\":{\"name\":\"asdfasdf\",\"verantwortung\":\"asdfasdf\",\"datum\":\"2025-12-29\"},\"id\":\"14dd8975-f037-489d-a903-427c0c76976c\",\"isHidden\":false,\"type\":\"anlass\"},{\"content\":{\"titel\":\"asdfasfasf\",\"datum\":\"2025-12-22\",\"stufen\":\"biber, pios\",\"info\":\"\",\"besammlung\":\"fasdfasfas\",\"besammlungsort\":\"\",\"schluss\":\"fasdfasf\",\"schlussort\":\"\",\"mitnehmen\":\"fasdfas\",\"leitperson\":\"asdfasdf\",\"email_leitperson\":\"uelae@pfimba.ch\",\"telefon_leitperson\":\"\"},\"id\":\"15b55e87-f395-46a8-b2ab-a5a329e2974f\",\"isHidden\":false,\"type\":\"aktiviteat\"}]"
+        },
+        "id": "e6c1b739-9fac-4dc2-93ea-d80b1604aeb1",
+        "isHidden": false,
+        "type": "one_col"
+    }
+]
+
+----
+
+Aktivitaeten:
+
+[
+    {
+        "content": {
+            "content": ""
+        },
+        "id": "180e31a2-a96e-43a1-af58-0c1a06b40f4e",
+        "isHidden": false,
+        "type": "one_col"
+    },
+    {
+        "content": {
+            "content_left": "",
+            "content_right": ""
+        },
+        "id": "2deaa7fa-bbc4-4d66-8423-2185914caa57",
+        "isHidden": false,
+        "type": "two_col"
+    },
+    {
+        "content": {
+            "content_left": "",
+            "content_right": ""
+        },
+        "id": "f97f6863-d01e-44af-bdf5-bb428879c20d",
+        "isHidden": false,
+        "type": "two_col"
+    }
+]
 
 ----
 

@@ -1,0 +1,13 @@
+type: one_col
+title: Eine Spalte
+preview: fields
+wysiwyg: true
+fields:
+  spalteninhalt:
+    label: Spalteninhalt
+    type: blocks
+    fieldsets:
+      - aktivitaet
+      - leiter
+      - anlass
+      - google_fotos
