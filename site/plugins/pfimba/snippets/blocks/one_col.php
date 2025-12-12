@@ -4,6 +4,4 @@
         <?= $inner ?>
     <?php endforeach ?>
 
-    <?php dump($block->spalteninhalt()); ?>
-
 </section>
