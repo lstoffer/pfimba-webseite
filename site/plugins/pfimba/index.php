@@ -20,4 +20,3 @@ Kirby::plugin('pmr/pfimba', [
     ],
 
 ]);
-

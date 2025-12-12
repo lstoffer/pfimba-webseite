@@ -18,11 +18,11 @@ fields:
     type: multiselect
     min: 1
     options:
+      abteilung: Abteilung
       biber: Biber
       woelfe: Wölfe
       pfadis: Pfadis
       pios: Pios
-      rover: Rover
     required: true
 
   info:
