@@ -1,5 +1,5 @@
 type: two_col
-name: Zwei Spalten
+title: Zwei Spalten
 preview: fields
 wysiwyg: true
 fields:
@@ -9,10 +9,11 @@ fields:
     max: 1
     width: 1/2
     fieldsets:
-      aktivitaet: blocks/aktivitaet
-      leiter: blocks/leiter
-      anlass: blocks/anlass
-      fotos: blocks/google_fotos
+      - aktivitaet
+      - leiter
+      - anlass
+      - google_fotos
+      - beitrag
 
   saplteninhalt_rechts:
     label: Rechter Spalteninhalt
@@ -24,3 +25,4 @@ fields:
       - leiter
       - anlass
       - google_fotos
+      - beitrag

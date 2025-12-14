@@ -1,0 +1,61 @@
+.beitrag {
+  padding: 2rem;
+  border: 1px solid #00000074;
+  border-radius: 6px;
+  background: #fff;
+
+  display: grid;
+  gap: 1.2rem;
+}
+
+.beitrag-titel {
+  margin: 0;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 30px;
+}
+
+.beitrag-bild img {
+  width: 100%;
+  display: block;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.beitrag-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.beitrag--left .beitrag-content,
+.beitrag--right .beitrag-content {
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+
+.beitrag--right .beitrag-content {
+  grid-template-columns: 2fr 1fr;
+}
+
+.beitrag--right .beitrag-bild {
+  order: 2;
+}
+
+.beitrag-text p {
+  margin-bottom: 1rem;
+}
+
+.beitrag-text p:last-child {
+  margin-bottom: 0;
+}
+
+
+@media (max-width: 768px) {
+  .beitrag--left .beitrag-content,
+  .beitrag--right .beitrag-content {
+    grid-template-columns: 1fr;
+  }
+
+  .beitrag--right .beitrag-bild {
+    order: 0;
+  }
+}

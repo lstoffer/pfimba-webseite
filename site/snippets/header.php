@@ -12,7 +12,14 @@ $headerImage = $page->headerImage()->toFile();
         '/assets/css/variables.css',
         '/assets/css/header_styles.css',
         '/assets/css/footer_styeles.css',
-        '/assets/css/styles.css'
+        '/assets/css/styles.css',
+    ])?>
+    <?= css([
+        'media/plugins/pmr/pfimba/css/aktivitaet.css',
+        'media/plugins/pmr/pfimba/css/leiter.css',
+        'media/plugins/pmr/pfimba/css/anlass.css',
+        'media/plugins/pmr/pfimba/css/google_fotos.css',
+        'media/plugins/pmr/pfimba/css/beitrag.css'
     ])?>
     <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
 </head>

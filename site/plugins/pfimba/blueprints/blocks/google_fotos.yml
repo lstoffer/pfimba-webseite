@@ -11,12 +11,12 @@ fields:
     max: 1
     layout: cards
     uploads:
-      parent: page.images
+      parent: page
       accept:
         extension: [jpg, jpeg, png, webp]
 
   name:
-    label: Vorname
+    label: Titel
     type: text
     required: true
 

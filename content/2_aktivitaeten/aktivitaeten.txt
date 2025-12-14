@@ -2,7 +2,7 @@ Title: Aktivitäten
 
 ----
 
-Headerimage: 
+Headerimage: - file://j4mzo1xrrpffqahy
 
 ----
 
@@ -15,7 +15,7 @@ Inhaltselemente:
 [
     {
         "content": {
-            "spalteninhalt": "[{\"content\":{\"name\":\"asdfasdf\",\"verantwortung\":\"asdfasdf\",\"datum\":\"2025-12-29\"},\"id\":\"14dd8975-f037-489d-a903-427c0c76976c\",\"isHidden\":false,\"type\":\"anlass\"},{\"content\":{\"name\":\"ttttttt\",\"verantwortung\":\"ttttt\",\"datum\":\"2025-12-29\"},\"id\":\"84d2974b-15f7-47d5-8c57-b712249ae6ef\",\"isHidden\":false,\"type\":\"anlass\"},{\"content\":{\"titel\":\"Aktivität Pfadistufe\",\"datum\":\"2025-12-10\",\"stufen\":\"biber, pfadis\",\"info\":\"asdfasf\",\"besammlung\":\"asdfasf\",\"besammlungsort\":\"\",\"schluss\":\"asfdaasf\",\"schlussort\":\"\",\"mitnehmen\":\"adsfafd\",\"leitperson\":\"fasfas\",\"email_leitperson\":\"uelae@pfimba.ch\",\"telefon_leitperson\":\"07748713758\"},\"id\":\"a87c650d-59f6-47ed-811f-267b8e8d01fb\",\"isHidden\":false,\"type\":\"aktivitaet\"}]"
+            "spalteninhalt": "[{\"content\":{\"name\":\"Fabilienabend\",\"verantwortung\":\"Miesa\",\"datum\":\"2025-12-29\"},\"id\":\"14dd8975-f037-489d-a903-427c0c76976c\",\"isHidden\":false,\"type\":\"anlass\"},{\"content\":{\"name\":\"ttttttt\",\"verantwortung\":\"ttttt\",\"datum\":\"2025-12-29\"},\"id\":\"84d2974b-15f7-47d5-8c57-b712249ae6ef\",\"isHidden\":false,\"type\":\"anlass\"},{\"content\":{\"titel\":\"Abteilungsklaus\",\"datum\":\"2025-12-10\",\"stufen\":\"biber\",\"info\":\"Wir freuen uns auf euch \",\"besammlung\":\"asdfasf\",\"besammlungsort\":\"\",\"schluss\":\"asfdaasf\",\"schlussort\":\"\",\"mitnehmen\":\"adsfafd\",\"leitperson\":\"fasfas\",\"email_leitperson\":\"uelae@pfimba.ch\",\"telefon_leitperson\":\"07748713758\"},\"id\":\"a87c650d-59f6-47ed-811f-267b8e8d01fb\",\"isHidden\":false,\"type\":\"aktivitaet\"},{\"content\":{\"foto\":[\"file://j4mzo1xrrpffqahy\"],\"vorname\":\"Luc\",\"nachname\":\"Stoffer\",\"pfadiname\":\"Ülä\",\"email\":\"uelae@pfimba.ch\",\"telefon\":\"\",\"funktion\":\"abteilungsleitung\"},\"id\":\"c6b9e191-c441-4bdc-9bae-814cc57a9cd5\",\"isHidden\":false,\"type\":\"leiter\"},{\"content\":{\"foto\":[\"file://j4mzo1xrrpffqahy\"],\"name\":\"Test Fotos\",\"link\":\"https://photos.app.goo.gl/7aY1NQ8RkhKUDcUL6\",\"jahr\":\"2025-01-01\",\"stufe\":\"biber, woelfe, pfadis, pios, rover\"},\"id\":\"7b73c0ab-ae77-405b-b9dc-463e8fc19061\",\"isHidden\":false,\"type\":\"google_fotos\"},{\"content\":{\"titel\":\"test\",\"text\":\"<p>test</p>\",\"toggle\":\"true\",\"bild\":[\"file://j4mzo1xrrpffqahy\"],\"bild_position\":\"links\"},\"id\":\"3781b212-c919-41be-a717-0a85be0f2a95\",\"isHidden\":false,\"type\":\"beitrag\"}]"
         },
         "id": "e6c1b739-9fac-4dc2-93ea-d80b1604aeb1",
         "isHidden": false,

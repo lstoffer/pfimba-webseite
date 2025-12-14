@@ -1,0 +1,100 @@
+.aktivitaet {
+  padding: 2rem;
+  border: 1px solid #00000074;
+  border-radius: 6px;
+  background: #fff;
+  display: grid;
+  gap: 1rem;
+}
+
+.aktivitaet-meta {
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.aktivitaet-meta::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 2px;
+  margin-top: 0.6rem;
+
+  background-color: #000;
+  opacity: 0.12;
+}
+
+.aktivitaet .datum {
+  font-family: "SuisseIntl SemiBold";
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.aktivitaet p {
+  margin-top: 0.5rem;
+}
+
+.aktivitaet .aktivitaet-stufen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.5rem 0 1rem 0;
+}
+
+.aktivitaet-stufen .stufe {
+  display: inline-block;
+  padding: 0.25rem 0.7rem;
+  border-radius: 999px;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 14px;
+  line-height: 1.2;
+  color: white;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.aktivitaet-stufen .stufe-abteilung {
+  background-color: var(--color-abteilung);
+}
+
+.aktivitaet-stufen .stufe-biber {
+  background-color: var(--color-biber);
+  color: #000;
+}
+
+.aktivitaet-stufen .stufe-woelfe {
+  background-color: var(--color-woelfe);
+}
+
+.aktivitaet-stufen .stufe-pfadis {
+  background-color: var(--color-pfadis);
+}
+
+.aktivitaet-stufen .stufe-pios {
+  background-color: var(--color-pios);
+}
+
+.aktivitaet-details {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 1rem;
+  row-gap: 0.4rem;
+
+  font-family: "SuisseNeue Light";
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.aktivitaet-details .label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.aktivitaet-details .value {
+  font-weight: 400;
+}
+
+.aktivitaet-details .label-spaced,
+.aktivitaet-details .value-spaced {
+  margin-top: 1rem;
+}

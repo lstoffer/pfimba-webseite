@@ -10,9 +10,9 @@ fields:
     max: 1
     layout: cards
     uploads:
-      parent: page.images
-      accept:
-        extension: [jpg, jpeg, png, webp]
+      parent: page
+    accept:
+      extension: [jpg, jpeg, png, webp]
 
   vorname:
     label: Vorname
@@ -27,7 +27,7 @@ fields:
   pfadiname:
     label: Pfadiname
     type: text
-    required: true
+    required: false
 
   email:
     label: E-Mail

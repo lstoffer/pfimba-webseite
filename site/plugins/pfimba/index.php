@@ -8,6 +8,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/aktivitaet' => __DIR__ . '/blueprints/blocks/aktivitaet.yml',
         'blocks/anlass' => __DIR__ . '/blueprints/blocks/anlass.yml',
         'blocks/google_fotos' => __DIR__ . '/blueprints/blocks/google_fotos.yml',
+        'blocks/beitrag' => __DIR__ . '/blueprints/blocks/beitrag.yml',
     ],
 
     'snippets' => [
@@ -17,6 +18,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/leiter'      => __DIR__ . '/snippets/blocks/leiter.php',
         'blocks/anlass'      => __DIR__ . '/snippets/blocks/anlass.php',
         'blocks/google_fotos'      => __DIR__ . '/snippets/blocks/google_fotos.php',
+        'blocks/beitrag' => __DIR__ . '/snippets/blocks/beitrag.php',
     ],
 
 ]);

@@ -1,0 +1,54 @@
+type: beitrag
+title: Beitrag
+preview: fields
+wysiwyg: true
+
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: true
+
+  text:
+    label: Inhalt
+    type: writer
+    size: large
+    required: false
+    toolbar:
+      inline: false
+      marks:
+        - bold
+        - italic
+        - link
+        - ul
+        - ol
+
+  toggle:
+    label: Mit Bild
+    type: toggle
+
+  bild:
+    label: Bild
+    type: files
+    min: 0
+    max: 1
+    when:
+      toggle: true
+    required: true
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [jpg, jpeg, png, webp]
+
+  bild_position:
+    label: Bildposition
+    type: select
+    when:
+      toggle: true
+    required: true
+    options:
+      oben: Oben
+      links: Links
+      rechts: Rechts
+      unten: Unten

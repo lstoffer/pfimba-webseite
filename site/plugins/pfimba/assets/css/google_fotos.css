@@ -1,0 +1,58 @@
+.google-fotos {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+
+  border: 1px solid #00000074;
+  border-radius: 6px;
+  background: #fff;
+  overflow: hidden;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.google-fotos:hover,
+.google-fotos:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.google-fotos-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.google-fotos-content {
+  padding: 1rem;
+}
+
+.google-fotos-name {
+  font-family: "SuisseIntl SemiBold";
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.google-fotos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.google-fotos-content {
+  padding: 1rem;
+  display: grid;
+  gap: 0.6rem;
+}
+
+.google-fotos-name {
+  font-family: "SuisseIntl SemiBold";
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+/* optional: slightly smaller badges here
+.google-fotos-stufen .stufe {
+  font-size: 13px;
+} */

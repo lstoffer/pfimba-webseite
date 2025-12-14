@@ -54,27 +54,38 @@
 
 <div class="aktivitaet">
 
-    <h3> <?= $block->titel() ?> </h3>
+    <div class="aktivitaet-meta">
+        <h3> <?= $block->titel() ?> </h3>
+        
+        <div class="datum"> <?= $block->datum()->toDate('d.m.Y') ?> </div>
     
-    <div class="datum"> <?= $block->datum() ?> </div>
+        <div class="aktivitaet-stufen">
+            <?php foreach ($block->stufen()->split() as $stufe): ?>
+                <span class="stufe stufe-<?= esc($stufe) ?>">
+                    <?= esc(ucfirst($stufe)) ?>
+                </span>
+            <?php endforeach ?>
+        </div>
 
-    <div class="aktivitaet-stufen">
-        <?php foreach ($block->stufen()->split() as $stufe): ?>
-            <span class="stufe stufe-<?= esc($stufe) ?>">
-                <?= esc(ucfirst($stufe)) ?>
-            </span>
-        <?php endforeach ?>
     </div>
 
-    <p>
-        <?= $block->info() ?>
-    </p>
 
-    <p>
-        <b>Besammlung: </b> <?= $block->besammlung() ?> <br>
-        <b>Schluss:</b> <?= $block->schluss() ?> <br>
-        <b>Mitnehmen:</b> <?= $block->mitnehmen() ?>
-    </p>
+    <?php if ($block->info()->isNotEmpty()): ?>
+        <p>
+            <?= $block->info() ?>
+        </p>
+    <?php endif ?>
+
+    <div class="aktivitaet-details">
+        <span class="label">Besammlung:</span>
+        <span class="value"><?= $block->besammlung() ?></span>
+
+        <span class="label">Schluss:</span>
+        <span class="value"><?= $block->schluss() ?></span>
+
+        <span class="label label-spaced">Mitnehmen:</span>
+        <span class="value value-spaced"><?= $block->mitnehmen() ?></span>
+    </div>
 
     <p>
         Bei Fragen und Abmeldungen <br>
