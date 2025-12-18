@@ -23,9 +23,10 @@ footer p,
 footer h1,
 footer h2,
 footer h3,
-footer a.external-link,
-footer a.download-link,
-footer a.mail-link {
+footer a,
+footer a.website,
+footer a.download,
+footer a.email {
     color: white;
 }
 

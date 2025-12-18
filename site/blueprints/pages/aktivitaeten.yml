@@ -24,6 +24,7 @@ columns:
             fieldsets:
               - one_col
               - two_col
+              - three_col
   
   sidebar:
     width: 1/3

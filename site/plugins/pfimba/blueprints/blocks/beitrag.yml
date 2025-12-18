@@ -9,6 +9,16 @@ fields:
     type: text
     required: true
 
+  text_ausrichtung:
+    label: Textausrichtung
+    type: select
+    default: links
+    options:
+      links: Linksbündig
+      blocksatz: Blocksatz
+      zentriert: Zentriert
+      rechts: Rechtsbündig
+
   text:
     label: Inhalt
     type: writer
@@ -48,7 +58,31 @@ fields:
       toggle: true
     required: true
     options:
-      oben: Oben
-      links: Links
-      rechts: Rechts
-      unten: Unten
+      top-left: Oben links
+      top-center: Oben mittig
+      top-right: Oben rechts
+
+      left-top: Links oben
+      left-center: Links mittig
+      left-bottom: Links unten
+
+      right-top: Rechts oben
+      right-center: Rechts mittig
+      right-bottom: Rechts unten
+
+      bottom-left: Unten links
+      bottom-center: Unten mittig
+      bottom-right: Unten rechts
+
+  bild_groesse:
+    label: Bildgröße
+    type: select
+    when:
+      toggle: true
+    required: true
+    default: normal
+    options:
+      small: Klein
+      normal: Normal
+      large: Groß
+      full: Volle Breite

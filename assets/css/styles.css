@@ -39,12 +39,13 @@ p {
   margin: 0;
 }
 
+a,
 a.website,
 a.email,
 a.download {
   font-family: "SuisseIntl SemiBold";
   text-decoration: none;
-  color: var(--red);
+  color: var(--color-abteilung);
   font-size: 20px;
 }
 

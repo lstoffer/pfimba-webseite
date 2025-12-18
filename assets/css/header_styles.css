@@ -5,6 +5,7 @@ header#header {
     background-size: cover;
     background-position: center;
     padding: 2%;
+    position: relative;
 }
 
 .header-logo {
@@ -17,37 +18,45 @@ header#header {
     height: 100%;
 }
 
-/* Header Borders */
-header#header.border {
-    border-bottom: 40px solid transparent;
+header#header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10;
+    height: 40px;
+
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+    pointer-events: none;
 }
 
-header#header.border.abteilung {
-    border-image: url('/assets/images/striche/00_abteilung_strich.png') 100 100 round;
+header#header.border.abteilung::after {
+    background-image: url('/assets/images/striche/00_abteilung_strich.png');
 }
 
-header#header.border.biber {
-    border-image: url('/assets/images/striche/01_biber_strich.png') 100 100 round;
+header#header.border.biber::after {
+    background-image: url('/assets/images/striche/01_biber_strich.png');
 }
 
-header#header.border.woelfe {
-    border-image: url('/assets/images/striche/02_wölfe_strich.png') 100 100 round;
+header#header.border.woelfe::after {
+    background-image: url('/assets/images/striche/02_wölfe_strich.png');
 }
 
-header#header.border.pfadis {
-    border-image: url('/assets/images/striche/03_pfadis_strich.png') 100 100 round;
+header#header.border.pfadis::after {
+    background-image: url('/assets/images/striche/03_pfadis_strich.png');
 }
 
-header#header.border.pios {
-    border-image: url('/assets/images/striche/04_pios_strich.png') 100 100 round;
+header#header.border.pios::after {
+    background-image: url('/assets/images/striche/04_pios_strich.png');
 }
 
-header#header.border.rover {
-    border-image: url('/assets/images/striche/05_rover_strich.png') 100 100 round;
+header#header.border.rover::after {
+    background-image: url('/assets/images/striche/05_rover_strich.png');
 }
 
-header#header.border.elternrat {
-    border-image: url('/assets/images/striche/06_elternrat_strich.png') 100 100 round;
+header#header.border.elternrat::after {
+    background-image: url('/assets/images/striche/06_elternrat_strich.png');
 }
 
 /* Navigation */

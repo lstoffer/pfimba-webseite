@@ -1,17 +1,27 @@
+/* ============================= */
+/* BASE                          */
+/* ============================= */
+
 .beitrag {
   padding: 2rem;
   border: 1px solid #00000074;
   border-radius: 6px;
   background: #fff;
-
-  display: grid;
-  gap: 1.2rem;
 }
 
 .beitrag-titel {
-  margin: 0;
+  margin: 0 0 1.5rem;
   font-family: "SuisseIntl SemiBold";
   font-size: 30px;
+}
+
+.beitrag-content {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.beitrag-bild {
+  max-width: 100%;
 }
 
 .beitrag-bild img {
@@ -21,23 +31,9 @@
   object-fit: cover;
 }
 
-.beitrag-content {
-  display: grid;
-  gap: 1.5rem;
-}
-
-.beitrag--left .beitrag-content,
-.beitrag--right .beitrag-content {
-  grid-template-columns: 1fr 2fr;
-  align-items: start;
-}
-
-.beitrag--right .beitrag-content {
-  grid-template-columns: 2fr 1fr;
-}
-
-.beitrag--right .beitrag-bild {
-  order: 2;
+.beitrag-text {
+  text-align: justify;
+  hyphens: auto;
 }
 
 .beitrag-text p {
@@ -48,14 +44,179 @@
   margin-bottom: 0;
 }
 
+.beitrag--text-links .beitrag-text {
+  text-align: left;
+}
+
+.beitrag--text-blocksatz .beitrag-text {
+  text-align: justify;
+  hyphens: auto;
+}
+
+.beitrag--text-zentriert .beitrag-text {
+  text-align: center;
+}
+
+.beitrag--text-rechts .beitrag-text {
+  text-align: right;
+}
+
+/* ============================= */
+/* TOP / BOTTOM (stacked)        */
+/* ============================= */
+
+.beitrag--top-left .beitrag-content,
+.beitrag--top-center .beitrag-content,
+.beitrag--top-right .beitrag-content,
+.beitrag--bottom-left .beitrag-content,
+.beitrag--bottom-center .beitrag-content,
+.beitrag--bottom-right .beitrag-content {
+  grid-template-columns: 1fr;
+}
+
+/* bottom order */
+.beitrag--bottom-left .beitrag-bild,
+.beitrag--bottom-center .beitrag-bild,
+.beitrag--bottom-right .beitrag-bild {
+  order: 2;
+}
+
+/* horizontal alignment */
+.beitrag--top-left .beitrag-bild,
+.beitrag--bottom-left .beitrag-bild {
+  justify-self: start;
+}
+
+.beitrag--top-center .beitrag-bild,
+.beitrag--bottom-center .beitrag-bild {
+  justify-self: center;
+}
+
+.beitrag--top-right .beitrag-bild,
+.beitrag--bottom-right .beitrag-bild {
+  justify-self: end;
+}
+
+/* ============================= */
+/* LEFT / RIGHT (side-by-side)   */
+/* ============================= */
+
+.beitrag--left-top .beitrag-content,
+.beitrag--left-center .beitrag-content,
+.beitrag--left-bottom .beitrag-content {
+  grid-template-columns: 1fr 2fr;
+}
+
+.beitrag--right-top .beitrag-content,
+.beitrag--right-center .beitrag-content,
+.beitrag--right-bottom .beitrag-content {
+  grid-template-columns: 2fr 1fr;
+}
+
+.beitrag--right-top .beitrag-bild,
+.beitrag--right-center .beitrag-bild,
+.beitrag--right-bottom .beitrag-bild {
+  order: 2;
+}
+
+/* vertical alignment */
+.beitrag--left-top .beitrag-bild,
+.beitrag--right-top .beitrag-bild {
+  align-self: start;
+}
+
+.beitrag--left-center .beitrag-bild,
+.beitrag--right-center .beitrag-bild {
+  align-self: center;
+}
+
+.beitrag--left-bottom .beitrag-bild,
+.beitrag--right-bottom .beitrag-bild {
+  align-self: end;
+}
+
+/* ============================= */
+/* IMAGE SIZE (Panel-controlled) */
+/* ============================= */
+
+/* stacked layouts */
+.beitrag--img-small .beitrag-bild {
+  max-width: 300px;
+}
+
+.beitrag--img-normal .beitrag-bild {
+  max-width: 500px;
+}
+
+.beitrag--img-large .beitrag-bild {
+  max-width: 800px;
+}
+
+.beitrag--img-full .beitrag-bild {
+  max-width: 100%;
+}
+
+/* side-by-side: SMALL */
+.beitrag--img-small.beitrag--left-top .beitrag-content,
+.beitrag--img-small.beitrag--left-center .beitrag-content,
+.beitrag--img-small.beitrag--left-bottom .beitrag-content {
+  grid-template-columns: 1fr 3fr;
+}
+
+.beitrag--img-small.beitrag--right-top .beitrag-content,
+.beitrag--img-small.beitrag--right-center .beitrag-content,
+.beitrag--img-small.beitrag--right-bottom .beitrag-content {
+  grid-template-columns: 3fr 1fr;
+}
+
+/* side-by-side: NORMAL */
+.beitrag--img-normal.beitrag--left-top .beitrag-content,
+.beitrag--img-normal.beitrag--left-center .beitrag-content,
+.beitrag--img-normal.beitrag--left-bottom .beitrag-content {
+  grid-template-columns: 1fr 2fr;
+}
+
+.beitrag--img-normal.beitrag--right-top .beitrag-content,
+.beitrag--img-normal.beitrag--right-center .beitrag-content,
+.beitrag--img-normal.beitrag--right-bottom .beitrag-content {
+  grid-template-columns: 2fr 1fr;
+}
+
+/* side-by-side: LARGE */
+.beitrag--img-large.beitrag--left-top .beitrag-content,
+.beitrag--img-large.beitrag--left-center .beitrag-content,
+.beitrag--img-large.beitrag--left-bottom .beitrag-content {
+  grid-template-columns: 2fr 2fr;
+}
+
+.beitrag--img-large.beitrag--right-top .beitrag-content,
+.beitrag--img-large.beitrag--right-center .beitrag-content,
+.beitrag--img-large.beitrag--right-bottom .beitrag-content {
+  grid-template-columns: 2fr 2fr;
+}
+
+/* FULL forces stacking */
+.beitrag--img-full .beitrag-content {
+  grid-template-columns: 1fr !important;
+}
+
+.beitrag--img-full .beitrag-bild {
+  order: 0;
+}
+
+/* ============================= */
+/* MOBILE                        */
+/* ============================= */
 
 @media (max-width: 768px) {
-  .beitrag--left .beitrag-content,
-  .beitrag--right .beitrag-content {
-    grid-template-columns: 1fr;
+  .beitrag-content {
+    grid-template-columns: 1fr !important;
   }
 
-  .beitrag--right .beitrag-bild {
-    order: 0;
+  .beitrag-bild {
+    order: 0 !important;
+    max-width: 100%;
+    justify-self: stretch;
+    align-self: start;
   }
 }

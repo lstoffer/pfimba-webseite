@@ -6,9 +6,11 @@ fields:
   name:
     label: Name
     type: text
+    required: true
   verantwortung:
     label: Verantwortung
     type: text
   datum:
     label: Datum
     type: date
+    required: true
