@@ -1,0 +1,41 @@
+.anlass {
+  padding: 1.5rem;
+  border: 1px solid #00000074;
+  border-radius: 6px;
+  background: #fff;
+
+  display: grid;
+  gap: 0.8rem;
+}
+
+.anlass-name {
+  margin: 0;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 22px;
+}
+
+.anlass-datum {
+  font-family: "SuisseIntl SemiBold";
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  color: #666;
+}
+
+.anlass-verantwortung {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: 0.8rem;
+
+  font-family: "SuisseNeue Light";
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.anlass-verantwortung .label {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.anlass-verantwortung .value {
+  font-weight: 400;
+}

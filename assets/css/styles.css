@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  font-family: "SuisseIntl Thin";
+  font-size: 70px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: black;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 45px;
+  margin: 16px 0;
+}
+
+h3 {
+  color: black;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+h4 {
+  color: black;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 26px;
+  line-height: 28px;
+  margin: 0;
+}
+
+p {
+  color: black;
+  font-family: "SuisseNeue Light";
+  font-size: 20px;
+  line-height: 28px;
+  margin: 0;
+}
+
+a,
+a.website,
+a.email,
+a.download {
+  font-family: "SuisseIntl SemiBold";
+  text-decoration: none;
+  color: var(--color-abteilung);
+  font-size: 20px;
+}
+
+a.website::before,
+a.email::before,
+a.download::before {
+  font-family: "Font Awesome 5 free";
+  font-weight: 600;
+  margin-right: 5px;
+}
+
+a.website::before {
+  content: "\f061";
+}
+
+a.email::before {
+  content: "\f0e0";
+}
+
+a.download::before {
+  content: "\f019";
+}
+
+#page {
+  position: relative;
+  max-width: 1500px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2%;
+}
+
+.content {
+  display: grid;
+  gap: 30px;
+  margin: 40px 0;
+}
+
+.content.one {
+  grid-template-columns: 1fr;
+}
+
+.content.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.content.three {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: 768px) {
+  .content.two,
+  .content.three {
+    grid-template-columns: 1fr;
+  }
+}

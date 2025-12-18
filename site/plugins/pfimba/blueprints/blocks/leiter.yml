@@ -1,0 +1,53 @@
+type: leiter
+title: Leiter
+preview: fields
+wysiwyg: true
+fields:
+  foto:
+    label: Foto
+    type: files
+    min: 1
+    max: 1
+    layout: cards
+    uploads:
+      parent: page
+    accept:
+      extension: [jpg, jpeg, png, webp]
+
+  vorname:
+    label: Vorname
+    type: text
+    required: true
+
+  nachname:
+    label: Nachname
+    type: text
+    required: true
+
+  pfadiname:
+    label: Pfadiname
+    type: text
+    required: false
+
+  email:
+    label: E-Mail
+    type: email
+    required: true
+
+  telefon:
+    label: Telefon
+    type: tel
+    required: false
+
+  funktion:
+    label: Funktion
+    type: select
+    required: false
+    options:
+      stufenleitung: Stufenleitung
+      abteilungsleitung: Abteilungsleitung
+      praesidium: Präsidium
+      finanzen: Fianzen
+      pfadiheime: Pfadiheime
+      oeffentlichkeitsarbeit: Öffentlichkeitsarbeit
+      aktuariat: Aktuariat

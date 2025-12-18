@@ -1,0 +1,43 @@
+<?php
+
+$headerImage = $page->headerImage()->toFile();
+
+?>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?= css([ // IMPORTANT: Oder matters
+        '/assets/css/fonts.css',
+        '/assets/fontawesome/css/all.min.css',
+        '/assets/css/variables.css',
+        '/assets/css/header_styles.css',
+        '/assets/css/footer_styeles.css',
+        '/assets/css/styles.css',
+    ])?>
+    <?= css([
+        'media/plugins/pmr/pfimba/css/aktivitaet.css',
+        'media/plugins/pmr/pfimba/css/leiter.css',
+        'media/plugins/pmr/pfimba/css/anlass.css',
+        'media/plugins/pmr/pfimba/css/google_fotos.css',
+        'media/plugins/pmr/pfimba/css/beitrag.css'
+    ])?>
+    <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
+</head>
+
+<header 
+    id="header" 
+    class="border <?= $page->headerLine()->value() ?>" 
+    <?php if($headerImage): ?>style="background-image:url('<?= $headerImage->url() ?>');"<?php endif; ?>
+>
+
+    <div class="header-logo">
+        <a href="/">
+            <img id='header-image' src="<?= url('/assets/images/logo/logo_rgb.png') ?>" alt="logo">
+        </a>
+    </div>
+
+    <?php snippet('navigation') ?>
+
+</header>
+
+<div id="page">

@@ -1,0 +1,88 @@
+type: beitrag
+title: Beitrag
+preview: fields
+wysiwyg: true
+
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: true
+
+  text_ausrichtung:
+    label: Textausrichtung
+    type: select
+    default: links
+    options:
+      links: Linksbündig
+      blocksatz: Blocksatz
+      zentriert: Zentriert
+      rechts: Rechtsbündig
+
+  text:
+    label: Inhalt
+    type: writer
+    size: large
+    required: false
+    toolbar:
+      inline: false
+      marks:
+        - bold
+        - italic
+        - link
+        - ul
+        - ol
+
+  toggle:
+    label: Mit Bild
+    type: toggle
+
+  bild:
+    label: Bild
+    type: files
+    min: 0
+    max: 1
+    when:
+      toggle: true
+    required: true
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [jpg, jpeg, png, webp]
+
+  bild_position:
+    label: Bildposition
+    type: select
+    when:
+      toggle: true
+    required: true
+    options:
+      top-left: Oben links
+      top-center: Oben mittig
+      top-right: Oben rechts
+
+      left-top: Links oben
+      left-center: Links mittig
+      left-bottom: Links unten
+
+      right-top: Rechts oben
+      right-center: Rechts mittig
+      right-bottom: Rechts unten
+
+      bottom-left: Unten links
+      bottom-center: Unten mittig
+      bottom-right: Unten rechts
+
+  bild_groesse:
+    label: Bildgröße
+    type: select
+    when:
+      toggle: true
+    required: true
+    default: normal
+    options:
+      small: Klein
+      normal: Normal
+      large: Groß
+      full: Volle Breite

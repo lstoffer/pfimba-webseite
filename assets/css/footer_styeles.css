@@ -1,0 +1,79 @@
+
+footer {
+    position: relative;
+    padding: 4%;
+    background-color: var(--color-abteilung);
+    height: 350px;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    top: -25px; 
+    height: 40px;
+    background-image: url("/assets/images/striche/00_abteilung_strich.png");
+    background-size: auto 40px;
+    pointer-events: none;
+}
+
+footer p,
+footer h1,
+footer h2,
+footer h3,
+footer a,
+footer a.website,
+footer a.download,
+footer a.email {
+    color: white;
+}
+
+#footer {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 1fr;
+    gap: 3rem;
+}
+
+.footer {
+    float: none;
+}
+
+.footer-logos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    align-items: center;
+}
+
+.footer-logos img {
+    max-height: 100px;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #footer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .footer-logos {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-logos {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

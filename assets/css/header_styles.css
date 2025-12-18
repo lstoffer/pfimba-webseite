@@ -1,0 +1,136 @@
+/* General */
+header#header {
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2%;
+    position: relative;
+}
+
+.header-logo {
+    height: 35%;
+    width: 15%;
+    float: left;
+}
+
+#header-image {
+    height: 100%;
+}
+
+header#header::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10;
+    height: 40px;
+
+    background-repeat: repeat-x;
+    background-size: auto 40px;
+    pointer-events: none;
+}
+
+header#header.border.abteilung::after {
+    background-image: url('/assets/images/striche/00_abteilung_strich.png');
+}
+
+header#header.border.biber::after {
+    background-image: url('/assets/images/striche/01_biber_strich.png');
+}
+
+header#header.border.woelfe::after {
+    background-image: url('/assets/images/striche/02_wölfe_strich.png');
+}
+
+header#header.border.pfadis::after {
+    background-image: url('/assets/images/striche/03_pfadis_strich.png');
+}
+
+header#header.border.pios::after {
+    background-image: url('/assets/images/striche/04_pios_strich.png');
+}
+
+header#header.border.rover::after {
+    background-image: url('/assets/images/striche/05_rover_strich.png');
+}
+
+header#header.border.elternrat::after {
+    background-image: url('/assets/images/striche/06_elternrat_strich.png');
+}
+
+/* Navigation */
+.navigation {
+    width: 85%;
+    float: left;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.navigation ul li {
+    float: left;
+    position: relative;
+    color: white;
+}
+
+.navigation ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "SuisseIntl SemiBold";
+    padding-top: 10px;
+    padding-left: 0;
+    padding-right: 30px;
+    text-shadow: 0px 1px 2px black;
+}
+
+.navigation ul li a:hover {
+  color: var(--color-abteilung);
+  transition: color 0.6s;
+}
+
+.navigation ul li a::after {
+    float: left;
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    background: var(--color-abteilung);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navigation ul li:not(:has(ul)):hover a::after {
+  width: 20%;
+  left: 0;
+}
+
+.navigation ul li ul {
+    display: none;
+    padding: 0;
+}
+
+.navigation ul li:hover ul {
+  display: block;
+}
+
+.navigation ul li ul li {
+  float: none;
+  display: block;
+  padding: 0;
+  text-align: left;
+}
+
+.navigation ul li ul li a {
+  font-size: 20px;
+  padding-right: 0;
+}

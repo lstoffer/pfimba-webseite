@@ -1,0 +1,28 @@
+type: two_col
+title: Zwei Spalten
+preview: fields
+wysiwyg: true
+fields:
+  content_left:
+    label: Linker Spalteninhalt
+    type: blocks
+    max: 1
+    width: 1/2
+    fieldsets:
+      - aktivitaet
+      - leiter
+      - anlass
+      - google_fotos
+      - beitrag
+
+  content_right:
+    label: Rechter Spalteninhalt
+    type: blocks
+    max: 1
+    width: 1/2
+    fieldsets:
+      - aktivitaet
+      - leiter
+      - anlass
+      - google_fotos
+      - beitrag

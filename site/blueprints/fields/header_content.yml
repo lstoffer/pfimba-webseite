@@ -1,0 +1,31 @@
+type: group
+fields:
+  pageSettings:
+    label: Seiten Einstellungen
+    type: headline
+
+  headerImage:
+    label: Header Image
+    type: files
+    max: 1
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [jpg, jpeg, png, webp]
+
+  headerLine:
+    label: Header Linie
+    type: select
+    required: true
+    options:
+      abteilung: Abteilung
+      biber: Biber
+      woelfe: Wölfe
+      pfadis: Pfadis
+      pios: Pios
+      rover: Rover
+      elternrat: Elternrat
+
+  line:
+    type: line

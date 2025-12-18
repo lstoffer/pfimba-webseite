@@ -1,0 +1,47 @@
+type: google_fotos
+title: Google Fotos
+preview: fields
+wysiwyg: true
+
+fields:
+  foto:
+    label: Vorschaubild
+    type: files
+    min: 1
+    max: 1
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [jpg, jpeg, png, webp]
+
+  name:
+    label: Titel
+    type: text
+    required: true
+
+  link:
+    label: Google Fotos Link
+    type: link
+    required: true
+
+  jahr:
+    label: Jahr
+    type: date
+    display: YYYY
+    units: year
+    calendar: false
+    required: true
+
+  stufe:
+    label: Stufen
+    type: multiselect
+    required: true
+    options:
+      abteilung: Abteilung
+      biber: Biber
+      woelfe: Wölfe
+      pfadis: Pfadis
+      pios: Pios
+      rover: Rover
+      elternrat: Elternrat

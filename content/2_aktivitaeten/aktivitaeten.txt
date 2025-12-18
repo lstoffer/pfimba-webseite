@@ -1,0 +1,54 @@
+Title: Aktivitäten
+
+----
+
+Headerimage: 
+
+----
+
+Headerline: abteilung
+
+----
+
+Inhaltselemente: 
+
+----
+
+Aktivitaeten:
+
+[
+    {
+        "content": {
+            "content": ""
+        },
+        "id": "180e31a2-a96e-43a1-af58-0c1a06b40f4e",
+        "isHidden": false,
+        "type": "one_col"
+    },
+    {
+        "content": {
+            "content_left": "",
+            "content_right": ""
+        },
+        "id": "2deaa7fa-bbc4-4d66-8423-2185914caa57",
+        "isHidden": false,
+        "type": "two_col"
+    },
+    {
+        "content": {
+            "content_left": "",
+            "content_right": ""
+        },
+        "id": "f97f6863-d01e-44af-bdf5-bb428879c20d",
+        "isHidden": false,
+        "type": "two_col"
+    }
+]
+
+----
+
+Text: 
+
+----
+
+Uuid: ol3ulp5ojf45khq6
