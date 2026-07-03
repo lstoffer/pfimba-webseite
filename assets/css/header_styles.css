@@ -141,6 +141,10 @@ header#header.border.elternrat::after {
   display: none;
 }
 
+.navigation-logo {
+  display: none;
+}
+
 /* Hamburger toggle */
 .nav-toggle {
   display: none;
@@ -201,6 +205,11 @@ header#header.border.elternrat::after {
     z-index: 1001;
   }
 
+  .nav-toggle.open span {
+    background: black;
+    box-shadow: none;
+  }
+
   .navigation {
     position: fixed;
     top: 0;
@@ -209,11 +218,10 @@ header#header.border.elternrat::after {
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    background: var(--color-abteilung);
-    /* background: rgba(20, 20, 20, 0.97); */
+    background: #fff;
     overflow-y: auto;
     box-sizing: border-box;
-    padding: 100px 8% 60px;
+    padding: 90px 8% 60px;
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 0.3s ease;
@@ -223,6 +231,17 @@ header#header.border.elternrat::after {
     transform: translateX(0);
   }
 
+  .navigation-logo {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 30px;
+  }
+
+  .navigation-logo img {
+    height: 120px;
+    width: auto;
+  }
+
   .navigation ul {
     text-align: left;
   }
@@ -230,11 +249,19 @@ header#header.border.elternrat::after {
   .navigation ul li {
     float: none;
     width: 100%;
+    color: black;
   }
 
   .navigation ul li a {
     font-size: 28px;
     padding: 15px 0;
+    color: black;
+    text-shadow: none;
+  }
+
+  .navigation ul li.active > a,
+  .navigation ul li ul.sub-menu li.active > a {
+    color: var(--color-abteilung);
   }
 
   .navigation ul li a::after {
@@ -269,8 +296,8 @@ header#header.border.elternrat::after {
     width: 14px;
     height: 14px;
     transform: translate(-50%, -60%) rotate(45deg);
-    border-right: 3px solid white;
-    border-bottom: 3px solid white;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
     transition: transform 0.3s ease;
   }
 
