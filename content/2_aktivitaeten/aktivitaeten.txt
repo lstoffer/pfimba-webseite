@@ -10,18 +10,7 @@ Headerline: abteilung
 
 ----
 
-Inhaltselemente:
-
-[
-    {
-        "content": {
-            "spalteninhalt": "[{\"content\":{\"titel\":\"Test\",\"datum\":\"2026-07-07\",\"stufen\":\"biber\",\"info\":\"\",\"besammlung\":\"Heerbrugg\",\"besammlungsort\":\"\",\"schluss\":\"Heerbrugg\",\"schlussort\":\"\",\"mitnehmen\":\"Test\",\"leitperson\":\"tes\",\"email_leitperson\":\"luc.stoffer@gmail.com\",\"telefon_leitperson\":\"\"},\"id\":\"8880b7c4-68ba-4762-8220-b813d97b066c\",\"isHidden\":false,\"type\":\"aktivitaet\"}]"
-        },
-        "id": "61ba3776-4ccf-4f35-847b-586995120d55",
-        "isHidden": false,
-        "type": "one_col"
-    }
-]
+Inhaltselemente: 
 
 ----
 

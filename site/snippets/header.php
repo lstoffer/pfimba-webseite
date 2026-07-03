@@ -20,7 +20,8 @@ $headerImage = $page->headerImage()->toFile();
         'media/plugins/pmr/pfimba/css/leiter.css',
         'media/plugins/pmr/pfimba/css/anlass.css',
         'media/plugins/pmr/pfimba/css/google_fotos.css',
-        'media/plugins/pmr/pfimba/css/beitrag.css'
+        'media/plugins/pmr/pfimba/css/beitrag.css',
+        'media/plugins/pmr/pfimba/css/quartalsprogramm.css'
     ])?>
     <?= js('/assets/js/navigation.js') ?>
     <?= js('/assets/js/galerie-filter.js') ?>

@@ -14,6 +14,7 @@ fields:
       - anlass
       - google_fotos
       - beitrag
+      - quartalsprogramm
 
   content_center:
     label: Rechter Spalteninhalt
@@ -26,6 +27,7 @@ fields:
       - anlass
       - google_fotos
       - beitrag
+      - quartalsprogramm
 
   content_right:
     label: Rechter Spalteninhalt
@@ -38,3 +40,4 @@ fields:
       - anlass
       - google_fotos
       - beitrag
+      - quartalsprogramm

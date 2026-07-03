@@ -10,16 +10,19 @@ Headerline: biber
 
 ----
 
-Inhaltselemente: 
+Inhaltselemente:
+
+[
+    {
+        "content": {
+            "spalteninhalt": "[{\"content\":{\"titel\":\"TEST Quartalsprogramm\",\"eintraege\":[{\"datum\":\"2026-08-01\",\"aktivitaet\":\"TEST Waldtag\",\"leiter\":\"TEST Uelae\"},{\"datum\":\"2026-08-15\",\"aktivitaet\":\"TEST Ausflug\",\"leiter\":\"TEST Foxi\"}]},\"id\":\"c1c1c1c1-0001-4a1a-8a1a-000000000001\",\"isHidden\":false,\"type\":\"quartalsprogramm\"}]"
+        },
+        "id": "c1c1c1c1-0000-4a1a-8a1a-000000000000",
+        "isHidden": false,
+        "type": "one_col"
+    }
+]
 
 ----
 
 Uuid: esfsyl5bgaypsxwp
-
-----
-
-Leiter: 
-
-----
-
-Text: 

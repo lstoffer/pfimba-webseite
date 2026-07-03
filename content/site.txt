@@ -26,6 +26,18 @@ Footerlinks:
   label: Datenschutz
   link:
     - page://62sg0qgnrpvnbrzk
+- 
+  label: Sponsoren
+  link:
+    - page://seunyhxqssp0ippi
+- 
+  label: Froschbatzen
+  link:
+    - page://qmy4uyif0yfojr9s
+- 
+  label: Statuten
+  link:
+    - page://1oignsnqpbveb1za
 
 ----
 

@@ -1,0 +1,37 @@
+type: quartalsprogramm
+title: Quartalsprogramm
+preview: fields
+wysiwyg: true
+
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: false
+
+  eintraege:
+    label: Einträge
+    type: structure
+    columns:
+      datum:
+        label: Datum
+        width: 1/4
+      aktivitaet:
+        label: Aktivität
+        width: 1/2
+      leiter:
+        label: Leiter
+        width: 1/4
+    fields:
+      datum:
+        label: Datum
+        type: date
+        required: true
+      aktivitaet:
+        label: Aktivität
+        type: text
+        required: true
+      leiter:
+        label: Leiter
+        type: text
+        required: true
