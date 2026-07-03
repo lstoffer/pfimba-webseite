@@ -3,6 +3,7 @@
 namespace Kirby\Form;
 
 use Kirby\Cms\HasSiblings;
+use Kirby\Toolkit\BlockCollectionAccess;
 use Kirby\Toolkit\I18n;
 
 /**
@@ -159,6 +160,17 @@ abstract class FieldClass
 			'when'        => $this->when(),
 			'width'       => $this->width(),
 		];
+	}
+
+	/**
+	 * @since 5.2.0
+	 * @todo Move to `Value` mixin once array-based fields are unsupported
+	 */
+	#[BlockCollectionAccess]
+	public function reset(): static
+	{
+		$this->value = $this->emptyValue();
+		return $this;
 	}
 
 	protected function setDisabled(bool $disabled = false): void

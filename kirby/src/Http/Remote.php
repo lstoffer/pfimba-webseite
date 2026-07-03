@@ -189,7 +189,9 @@ class Remote
 					$value = $key . ': ' . $value;
 				}
 
-				$headers[] = $value;
+				// Prevent header injection by
+				// stripping new line characters
+				$headers[] = str_replace(["\r", "\n"], '', $value);
 			}
 
 			$this->curlopt[CURLOPT_HTTPHEADER] = $headers;
@@ -255,8 +257,6 @@ class Remote
 			throw new Exception($this->errorMessage, $this->errorCode);
 		}
 
-		curl_close($this->curl);
-
 		return $this;
 	}
 
@@ -312,7 +312,18 @@ class Remote
 	 */
 	public function json(bool $array = true): array|stdClass|null
 	{
-		return json_decode($this->content(), $array);
+		if ($content = $this->content()) {
+			$json = json_decode($content, $array);
+
+			if (
+				is_array($json) === true ||
+				$json instanceof stdClass === true
+			) {
+				return $json;
+			}
+		}
+
+		return null;
 	}
 
 	/**

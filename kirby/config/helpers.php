@@ -202,7 +202,7 @@ if (Helpers::hasOverride('go') === false) { // @codeCoverageIgnore
 	 */
 	function go(string $url = '/', int $code = 302): never
 	{
-		Response::go($url, $code);
+		Response::go($url, $code); // @codeCoverageIgnore
 	}
 }
 
@@ -551,7 +551,7 @@ if (Helpers::hasOverride('t') === false) { // @codeCoverageIgnore
 	 */
 	function t(
 		string|array $key,
-		string|null $fallback = null,
+		string|array|null $fallback = null,
 		string|null $locale = null
 	): string|array|Closure|null {
 		return I18n::translate($key, $fallback, $locale);
