@@ -10,7 +10,7 @@ Headerline: abteilung
 
 ----
 
-Naechsteranlassposition: unten
+Naechsteranlassposition: oben
 
 ----
 
@@ -19,7 +19,7 @@ Inhaltselemente:
 [
     {
         "content": {
-            "spalteninhalt": "[{\"content\":{\"titel\":\"test\",\"text_ausrichtung\":\"links\",\"text\":\"<p>fasfasfasfafafa</p>\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"75fe26cd-5309-4b14-86da-0a38cf88e272\",\"isHidden\":false,\"type\":\"beitrag\"}]"
+            "spalteninhalt": "[{\"content\":{\"titel\":\"test\",\"text_ausrichtung\":\"links\",\"text\":\"<p>fasfasfasfafafa</p>\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"75fe26cd-5309-4b14-86da-0a38cf88e272\",\"isHidden\":false,\"type\":\"beitrag\"},{\"content\":{\"titel\":\"test2\",\"text_ausrichtung\":\"links\",\"text\":\"\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"a7ac6e8a-1991-4da7-9fa6-59b757fce960\",\"isHidden\":false,\"type\":\"beitrag\"},{\"content\":{\"titel\":\"tset\",\"text_ausrichtung\":\"links\",\"text\":\"\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"064c7682-4b4d-4b63-87b7-b0208a7f9cf4\",\"isHidden\":false,\"type\":\"beitrag\"}]"
         },
         "id": "f0ed4662-fd48-4d75-a9cf-c272daefeb58",
         "isHidden": false,

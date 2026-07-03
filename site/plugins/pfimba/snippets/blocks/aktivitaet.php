@@ -29,6 +29,10 @@
 
     $selectedStufen = $block->stufen()->split();
 
+    $primaryStufe = in_array('abteilung', $selectedStufen, true)
+        ? 'abteilung'
+        : ($selectedStufen[0] ?? 'abteilung');
+
     if (in_array('abteilung', $selectedStufen, true)) {
         $gruesse = array_values($stufenGrussMap);
     } else {
@@ -52,7 +56,7 @@
 
 
 
-<div class="aktivitaet">
+<div class="aktivitaet aktivitaet--stufe-<?= esc($primaryStufe) ?>">
 
     <div class="aktivitaet-meta">
         <h3> <?= $block->titel() ?> </h3>

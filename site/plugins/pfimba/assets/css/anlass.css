@@ -1,8 +1,9 @@
 .anlass {
   padding: 1.5rem;
-  border: 1px solid #00000074;
   border-radius: 6px;
+  border-left: 6px solid var(--color-abteilung);
   background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
 
   display: grid;
   gap: 0.8rem;

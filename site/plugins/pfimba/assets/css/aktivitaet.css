@@ -1,10 +1,27 @@
 .aktivitaet {
   padding: 2rem;
-  border: 1px solid #00000074;
   border-radius: 6px;
+  border-left: 6px solid var(--color-abteilung);
   background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   display: grid;
   gap: 1rem;
+}
+
+.aktivitaet--stufe-biber {
+  border-left-color: var(--color-biber);
+}
+
+.aktivitaet--stufe-woelfe {
+  border-left-color: var(--color-woelfe);
+}
+
+.aktivitaet--stufe-pfadis {
+  border-left-color: var(--color-pfadis);
+}
+
+.aktivitaet--stufe-pios {
+  border-left-color: var(--color-pios);
 }
 
 .aktivitaet-meta {
@@ -15,12 +32,12 @@
 .aktivitaet-meta::after {
   content: "";
   display: block;
-  width: 60px;
+  width: 100%;
   height: 2px;
   margin-top: 0.6rem;
 
   background-color: #000;
-  opacity: 0.12;
+  opacity: 0.16;
 }
 
 .aktivitaet .datum {

@@ -22,8 +22,8 @@
 ?>
 
 <?php if ($nextAnlass && $nextAnlassPosition === 'oben'): ?>
-    <div class="content one">
-        <h2>Nächster Anlass</h2>
+    <div class="naechster-anlass">
+        <h2 class="naechster-anlass-title">Nächster Anlass</h2>
         <?= $nextAnlass->toHtml() ?>
     </div>
 <?php endif ?>
@@ -31,8 +31,8 @@
 <?= $page->inhaltselemente()->toBlocks() ?>
 
 <?php if ($nextAnlass && $nextAnlassPosition !== 'oben'): ?>
-    <div class="content one">
-        <h2>Nächster Anlass</h2>
+    <div class="naechster-anlass">
+        <h2 class="naechster-anlass-title">Nächster Anlass</h2>
         <?= $nextAnlass->toHtml() ?>
     </div>
 <?php endif ?>
