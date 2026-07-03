@@ -16,11 +16,13 @@ columns:
           inhalt:
             label: Inhalt
             type: headline
-          leiter:
+          inhaltselemente:
             type: blocks
             pretty: true
             fieldsets:
-              - leiter
+              - one_col
+              - two_col
+              - three_col
   
   sidebar:
     width: 1/3

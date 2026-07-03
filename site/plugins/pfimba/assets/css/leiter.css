@@ -1,9 +1,9 @@
 .leiter {
   display: grid;
-  grid-template-columns: 120px 1fr;
-  gap: 1.2rem;
+  grid-template-columns: 160px 1fr;
+  gap: 1.5rem;
 
-  padding: 1.5rem;
+  padding: 2rem;
   border: 1px solid #00000074;
   border-radius: 6px;
   background: #fff;
@@ -20,40 +20,40 @@
 .leiter-name {
   margin: 0;
   font-family: "SuisseIntl SemiBold";
-  font-size: 22px;
+  font-size: 26px;
 }
 
 .leiter-pfadiname {
   font-family: "SuisseNeue Light";
-  font-size: 18px;
+  font-size: 20px;
   color: #555;
-  margin-top: 0.2rem;
+  margin-top: 0.3rem;
 }
 
 .leiter-funktion {
-  margin-top: 0.5rem;
+  margin-top: 0.6rem;
   font-family: "SuisseIntl SemiBold";
-  font-size: 16px;
+  font-size: 18px;
   color: #666;
 }
 
 .leiter-kontakt {
-  margin-top: 0.8rem;
+  margin-top: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.3rem;
+  gap: 0.4rem;
 }
 
 .leiter-kontakt .email {
   font-family: "SuisseIntl SemiBold";
-  font-size: 18px;
+  font-size: 20px;
   color: var(--color-abteilung);
   text-decoration: none;
 }
 
 .leiter-kontakt .telefon {
   font-family: "SuisseNeue Light";
-  font-size: 18px;
+  font-size: 20px;
   color: #000;
 }
 
@@ -64,7 +64,7 @@
   }
 
   .leiter-foto {
-    max-width: 180px;
+    max-width: 200px;
     margin: 0 auto;
   }
 

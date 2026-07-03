@@ -36,6 +36,18 @@ columns:
           line:
             type: line
 
+          inhalt:
+            label: Inhalt
+            type: headline
+
+          inhaltselemente:
+            type: blocks
+            pretty: true
+            fieldsets:
+              - one_col
+              - two_col
+              - three_col
+
   sidebar:
     width: 1/3
     sections:

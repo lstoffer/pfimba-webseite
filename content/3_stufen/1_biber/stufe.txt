@@ -10,31 +10,16 @@ Headerline: biber
 
 ----
 
-Leiter:
-
-[
-    {
-        "content": {
-            "foto": [
-                "file://vwda9pk30rit8as6"
-            ],
-            "vorname": "Luc",
-            "nachname": "Stoffer",
-            "pfadiname": "Uelae",
-            "email": "uelae@pfimba.ch",
-            "telefon": "",
-            "funktion": ""
-        },
-        "id": "fbc3cce8-cf04-4c8c-8d3c-5324065ec62d",
-        "isHidden": false,
-        "type": "leiter"
-    }
-]
-
-----
-
-Text: 
+Inhaltselemente: 
 
 ----
 
 Uuid: esfsyl5bgaypsxwp
+
+----
+
+Leiter: 
+
+----
+
+Text: 
