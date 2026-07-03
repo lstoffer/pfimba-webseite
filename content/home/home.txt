@@ -1,0 +1,32 @@
+Title: Startseite
+
+----
+
+Headerimage: 
+
+----
+
+Headerline: abteilung
+
+----
+
+Naechsteranlassposition: unten
+
+----
+
+Inhaltselemente:
+
+[
+    {
+        "content": {
+            "spalteninhalt": "[{\"content\":{\"titel\":\"test\",\"text_ausrichtung\":\"links\",\"text\":\"<p>fasfasfasfafafa</p>\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"75fe26cd-5309-4b14-86da-0a38cf88e272\",\"isHidden\":false,\"type\":\"beitrag\"}]"
+        },
+        "id": "f0ed4662-fd48-4d75-a9cf-c272daefeb58",
+        "isHidden": false,
+        "type": "one_col"
+    }
+]
+
+----
+
+Uuid: btkooxpbk1ek2tp4

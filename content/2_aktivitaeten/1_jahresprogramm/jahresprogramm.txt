@@ -22,6 +22,36 @@ Aktivitaeten:
         "id": "b2b062b0-95ee-402f-b55c-0fa3a13b0a81",
         "isHidden": false,
         "type": "anlass"
+    },
+    {
+        "content": {
+            "name": "TEST Fruehlingswanderung",
+            "verantwortung": "TEST Leitungsteam Biber",
+            "datum": "2026-05-01"
+        },
+        "id": "d1d1d1d1-0001-4a1a-8a1a-000000000001",
+        "isHidden": false,
+        "type": "anlass"
+    },
+    {
+        "content": {
+            "name": "TEST Sommerlager",
+            "verantwortung": "TEST Leitungsteam Abteilung",
+            "datum": "2026-07-15"
+        },
+        "id": "d1d1d1d1-0002-4a1a-8a1a-000000000002",
+        "isHidden": false,
+        "type": "anlass"
+    },
+    {
+        "content": {
+            "name": "TEST Herbstanlass",
+            "verantwortung": "TEST Leitungsteam Rover",
+            "datum": "2026-09-01"
+        },
+        "id": "d1d1d1d1-0003-4a1a-8a1a-000000000003",
+        "isHidden": false,
+        "type": "anlass"
     }
 ]
 
