@@ -21,6 +21,7 @@ $headerImage = $page->headerImage()->toFile();
         'media/plugins/pmr/pfimba/css/google_fotos.css',
         'media/plugins/pmr/pfimba/css/beitrag.css'
     ])?>
+    <?= js('/assets/js/navigation.js') ?>
     <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
 </head>
 
@@ -35,6 +36,19 @@ $headerImage = $page->headerImage()->toFile();
             <img id='header-image' src="<?= url('/assets/images/logo/logo_rgb.png') ?>" alt="logo">
         </a>
     </div>
+
+    <button
+        id="nav-toggle"
+        class="nav-toggle"
+        type="button"
+        aria-label="Menü öffnen"
+        aria-expanded="false"
+        aria-controls="site-navigation"
+    >
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
 
     <?php snippet('navigation') ?>
 
