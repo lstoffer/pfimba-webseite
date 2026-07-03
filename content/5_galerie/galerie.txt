@@ -1,0 +1,48 @@
+Title: Galerie
+
+----
+
+Headerimage: 
+
+----
+
+Headerline: abteilung
+
+----
+
+Bilder:
+
+[
+    {
+        "content": {
+            "foto": [
+                "file://zziooylmy9rqmqol"
+            ],
+            "name": "123",
+            "link": "http://localhost/galerie",
+            "jahr": "2024-01-01",
+            "stufe": "biber, rover"
+        },
+        "id": "c2345249-15c1-4402-8178-9be0dd5200e4",
+        "isHidden": false,
+        "type": "google_fotos"
+    },
+    {
+        "content": {
+            "foto": [
+                "file://zziooylmy9rqmqol"
+            ],
+            "name": "4567",
+            "link": "http://localhost/galerie",
+            "jahr": "2023-01-01",
+            "stufe": "pios"
+        },
+        "id": "2a826af7-7dde-4631-8327-bd1f6c1cee47",
+        "isHidden": false,
+        "type": "google_fotos"
+    }
+]
+
+----
+
+Uuid: ubii1x9uiucrykik

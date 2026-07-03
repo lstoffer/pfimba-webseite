@@ -74,6 +74,14 @@
   background-color: var(--color-pios);
 }
 
+.aktivitaet-stufen .stufe-rover {
+  background-color: var(--color-rover);
+}
+
+.aktivitaet-stufen .stufe-elternrat {
+  background-color: var(--color-komitee);
+}
+
 .aktivitaet-details {
   display: grid;
   grid-template-columns: max-content 1fr;

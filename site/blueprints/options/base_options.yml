@@ -1,6 +1,7 @@
 options:
   changeTemplate:
     - aktivitaeten
+    - galerie
     - jahresprogramm
     - seite
     - stufe

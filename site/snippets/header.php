@@ -13,6 +13,7 @@ $headerImage = $page->headerImage()->toFile();
         '/assets/css/header_styles.css',
         '/assets/css/footer_styeles.css',
         '/assets/css/styles.css',
+        '/assets/css/galerie_styles.css',
     ])?>
     <?= css([
         'media/plugins/pmr/pfimba/css/aktivitaet.css',
@@ -22,6 +23,7 @@ $headerImage = $page->headerImage()->toFile();
         'media/plugins/pmr/pfimba/css/beitrag.css'
     ])?>
     <?= js('/assets/js/navigation.js') ?>
+    <?= js('/assets/js/galerie-filter.js') ?>
     <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
 </head>
 
