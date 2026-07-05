@@ -1,5 +1,6 @@
 type: archiv_dokument
 title: Archiv Dokument
+label: "{{ titel }} ({{ jahr }})"
 preview: fields
 wysiwyg: true
 

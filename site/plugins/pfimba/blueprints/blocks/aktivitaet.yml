@@ -1,5 +1,6 @@
 type: aktivitaet
 title: Aktivität
+label: "{{ titel }} ({{ datum }})"
 preview: fields
 wysiwyg: true
 fields:

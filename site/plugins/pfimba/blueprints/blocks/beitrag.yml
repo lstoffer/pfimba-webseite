@@ -1,5 +1,6 @@
 type: beitrag
 title: Beitrag
+label: "{{ titel }}"
 preview: fields
 wysiwyg: true
 

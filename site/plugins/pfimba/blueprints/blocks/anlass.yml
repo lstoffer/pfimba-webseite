@@ -1,5 +1,6 @@
 type: anlass
 title: Anlass
+label: "{{ name }} ({{ datum }})"
 preview: fields
 wysiwyg: true
 fields:

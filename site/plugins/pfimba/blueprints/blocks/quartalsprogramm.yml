@@ -1,5 +1,6 @@
 type: quartalsprogramm
 title: Quartalsprogramm
+label: "{{ titel }}"
 preview: fields
 wysiwyg: true
 
