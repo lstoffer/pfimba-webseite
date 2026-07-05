@@ -2,7 +2,7 @@ Title: Jahresprogramm
 
 ----
 
-Headerimage: 
+Headerimage:
 
 ----
 
@@ -10,11 +10,7 @@ Headerline: abteilung
 
 ----
 
-Aktivitaeten: 
-
-----
-
-Text: 
+Aktivitaeten:
 
 ----
 

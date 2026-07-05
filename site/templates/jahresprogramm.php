@@ -7,20 +7,19 @@
         ->filterBy('type', 'anlass')
         ->filter(fn ($block) => $block->name()->isNotEmpty() && $block->datum()->isNotEmpty())
         ->sortBy(fn ($block) => $block->datum()->toDate(), 'asc');
+
+    $anlaesseByYear = $anlaesse->group(fn ($block) => $block->datum()->toDate('Y'));
 ?>
 
-<?php if ($anlaesse->isNotEmpty()): ?>
-
-    <div class="content one">
-        <?php foreach ($anlaesse as $block): ?>
-            <?= $block->toHtml() ?>
-        <?php endforeach ?>
+<?php foreach ($anlaesseByYear as $jahr => $anlaesseDesJahres): ?>
+    <div class="jahresprogramm-jahr">
+        <h2 class="jahresprogramm-jahr-titel"><?= esc($jahr) ?></h2>
+        <div class="content one">
+            <?php foreach ($anlaesseDesJahres as $block): ?>
+                <?= $block->toHtml() ?>
+            <?php endforeach ?>
+        </div>
     </div>
-
-<?php else: ?>
-
-    <p>Noch keine Anlässe vorhanden.</p>
-
-<?php endif ?>
+<?php endforeach ?>
 
 <?php snippet('footer') ?>
