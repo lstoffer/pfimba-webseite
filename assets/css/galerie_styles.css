@@ -143,8 +143,9 @@
 }
 
 .google-fotos-jahr {
+  margin-top: 0.5rem;
   font-family: "SuisseNeue Light";
-  font-size: 14px;
+  font-size: 15px;
   color: #555;
 }
 

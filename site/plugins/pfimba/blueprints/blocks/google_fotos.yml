@@ -21,6 +21,11 @@ fields:
     type: text
     required: true
 
+  motto:
+    label: Motto
+    type: text
+    required: false
+
   link:
     label: Google Fotos Link
     type: link

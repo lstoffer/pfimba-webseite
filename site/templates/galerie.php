@@ -81,6 +81,7 @@
             <?php
                 $foto   = $block->foto()->toFile();
                 $name   = $block->name();
+                $motto  = $block->motto();
                 $link   = $block->link()->toUrl();
                 $stufen = $block->stufe()->split();
                 $jahr   = $block->jahr()->toDate('Y');
@@ -108,6 +109,8 @@
 
                     <div class="google-fotos-content">
                         <div class="google-fotos-name"><?= esc($name) ?></div>
+
+                        <div class="google-fotos-motto"><?= esc($motto) ?></div>
 
                         <?php if (!empty($stufen)): ?>
                             <div class="google-fotos-stufen aktivitaet-stufen">
