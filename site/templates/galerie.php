@@ -130,10 +130,6 @@
 
     <p class="galerie-empty" id="galerie-empty" hidden>Keine Einträge für diese Auswahl gefunden.</p>
 
-<?php else: ?>
-
-    <p>Noch keine Galerie-Einträge vorhanden.</p>
-
 <?php endif ?>
 
 <?php snippet('footer') ?>
