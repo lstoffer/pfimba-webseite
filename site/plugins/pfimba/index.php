@@ -14,6 +14,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/beitrag' => __DIR__ . '/blueprints/blocks/beitrag.yml',
         'blocks/quartalsprogramm' => __DIR__ . '/blueprints/blocks/quartalsprogramm.yml',
         'blocks/archiv_dokument' => __DIR__ . '/blueprints/blocks/archiv_dokument.yml',
+        'blocks/tabelle' => __DIR__ . '/blueprints/blocks/tabelle.yml',
     ],
 
     'snippets' => [
@@ -27,6 +28,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/beitrag' => __DIR__ . '/snippets/blocks/beitrag.php',
         'blocks/quartalsprogramm' => __DIR__ . '/snippets/blocks/quartalsprogramm.php',
         'blocks/archiv_dokument' => __DIR__ . '/snippets/blocks/archiv_dokument.php',
+        'blocks/tabelle' => __DIR__ . '/snippets/blocks/tabelle.php',
     ],
 
     'fileMethods' => [
