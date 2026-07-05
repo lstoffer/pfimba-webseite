@@ -1,6 +1,7 @@
 <?php
     $foto   = $block->foto()->toFile();
     $name   = $block->name();
+    $motto  = $block->motto();
     $link   = $block->link()->toUrl();
     $stufen = $block->stufe()->split();
 
@@ -43,6 +44,10 @@
 
       <div class="google-fotos-name">
         <?= esc($name) ?>
+      </div>
+
+      <div class="google-fotos-motto">
+        <?= esc($motto) ?>
       </div>
 
       <?php if (!empty($stufen)): ?>

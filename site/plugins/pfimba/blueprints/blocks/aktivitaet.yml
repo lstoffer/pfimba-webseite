@@ -1,5 +1,6 @@
 type: aktivitaet
 title: Aktivität
+label: "{{ titel }} ({{ datum }})"
 preview: fields
 wysiwyg: true
 fields:
@@ -56,16 +57,16 @@ fields:
     required: true
 
   leitperson:
-    label: Leiter Name
+    label: Leitperson Name
     type: text
     required: true
 
   email_leitperson:
-    label: Leiter Email
+    label: Leitperson Email
     type: email
     required: true
 
   telefon_leitperson:
-    label: Leiter Telefon
+    label: Leitperson Telefon
     type: tel
     required: false

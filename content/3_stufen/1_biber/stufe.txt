@@ -2,7 +2,7 @@ Title: Biber
 
 ----
 
-Headerimage: 
+Headerimage:
 
 ----
 
@@ -10,7 +10,7 @@ Headerline: biber
 
 ----
 
-Inhaltselemente: 
+Inhaltselemente:
 
 ----
 

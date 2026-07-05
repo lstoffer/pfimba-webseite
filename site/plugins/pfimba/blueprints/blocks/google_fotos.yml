@@ -1,5 +1,6 @@
 type: google_fotos
 title: Google Fotos
+label: "{{ name }} ({{ jahr }})"
 preview: fields
 wysiwyg: true
 
@@ -19,6 +20,11 @@ fields:
     label: Titel
     type: text
     required: true
+
+  motto:
+    label: Motto
+    type: text
+    required: false
 
   link:
     label: Google Fotos Link

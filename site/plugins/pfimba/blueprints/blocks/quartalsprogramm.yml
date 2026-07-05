@@ -1,5 +1,6 @@
 type: quartalsprogramm
 title: Quartalsprogramm
+label: "{{ titel }}"
 preview: fields
 wysiwyg: true
 
@@ -19,8 +20,8 @@ fields:
       aktivitaet:
         label: Aktivität
         width: 1/2
-      leiter:
-        label: Leiter
+      leitperson:
+        label: Leitperson
         width: 1/4
     fields:
       datum:
@@ -31,7 +32,7 @@ fields:
         label: Aktivität
         type: text
         required: true
-      leiter:
-        label: Leiter
+      leitperson:
+        label: Leitperson
         type: text
         required: true

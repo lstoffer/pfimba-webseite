@@ -20,7 +20,7 @@
   <?php if ($foto): ?>
     <div class="leiter-foto">
       <img
-        src="<?= $foto->resize(400)->url() ?>"
+        src="<?= $foto->resize(600)->url() ?>"
         alt="<?= esc($name) ?>"
       >
     </div>

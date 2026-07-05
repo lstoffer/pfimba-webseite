@@ -1,5 +1,6 @@
 type: leiter
-title: Leiter
+title: Leitperson
+label: "{{ vorname }} {{ nachname }} v/o {{ pfadiname }}"
 preview: fields
 wysiwyg: true
 fields:
