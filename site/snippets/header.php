@@ -14,6 +14,7 @@ $headerImage = $page->headerImage()->toFile();
         '/assets/css/footer_styeles.css',
         '/assets/css/styles.css',
         '/assets/css/galerie_styles.css',
+        '/assets/css/archiv_styles.css',
     ])?>
     <?= css([
         'media/plugins/pmr/pfimba/css/aktivitaet.css',

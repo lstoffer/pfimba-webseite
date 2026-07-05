@@ -1,0 +1,29 @@
+type: archiv_dokument
+title: Archiv Dokument
+preview: fields
+wysiwyg: true
+
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: true
+
+  jahr:
+    label: Jahr
+    type: date
+    display: YYYY
+    units: year
+    calendar: false
+    required: true
+
+  datei:
+    label: PDF Datei
+    type: files
+    min: 1
+    max: 1
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [pdf]
