@@ -1,21 +1,21 @@
 <?php
 
-    $leiterName = $block->leitperson();
-    $leiterEmail = $block->email_leitperson();
-    $leiterTelefon = $block->telefon_leitperson();
+    $leitpersonName = $block->leitperson();
+    $leitpersonEmail = $block->email_leitperson();
+    $leitpersonTelefon = $block->telefon_leitperson();
 
-    $leitperson = [];
+    $leitpersonKontakt = [];
 
-    if($leiterEmail->isNotEmpty()) {
-        $leitperson[] = '<a href="mailto:' . $leiterEmail . '">' . $leiterEmail . '</a>';
+    if($leitpersonEmail->isNotEmpty()) {
+        $leitpersonKontakt[] = '<a href="mailto:' . $leitpersonEmail . '">' . $leitpersonEmail . '</a>';
     }
 
-    if($leiterTelefon->isNotEmpty()) {
-        $leitperson[] = $leiterTelefon;
+    if($leitpersonTelefon->isNotEmpty()) {
+        $leitpersonKontakt[] = $leitpersonTelefon;
     }
 
-    if(!empty($leitperson)) {
-        $leitpersonInfo = $leiterName . ' (' . implode(' / ', $leitperson) . ')';
+    if(!empty($leitpersonKontakt)) {
+        $leitpersonInfo = $leitpersonName . ' (' . implode(' / ', $leitpersonKontakt) . ')';
     }
 
 

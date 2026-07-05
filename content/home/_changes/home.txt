@@ -1,0 +1,36 @@
+Title: Startseite
+
+----
+
+Headerimage: 
+
+----
+
+Headerline: abteilung
+
+----
+
+Naechsteranlassposition: oben
+
+----
+
+Inhaltselemente:
+
+[
+    {
+        "content": {
+            "spalteninhalt": "[{\"content\":{\"titel\":\"\",\"text_ausrichtung\":\"links\",\"text\":\"\",\"toggle\":\"false\",\"bild\":[],\"bild_position\":\"\",\"bild_groesse\":\"normal\"},\"id\":\"934d57d6-bfb6-4b47-b52e-dda5aee297ff\",\"isHidden\":false,\"type\":\"beitrag\"}]"
+        },
+        "id": "0d8ba795-8871-4094-889d-ec6b7518dae8",
+        "isHidden": false,
+        "type": "one_col"
+    }
+]
+
+----
+
+Uuid: btkooxpbk1ek2tp4
+
+----
+
+Lock: FbBgLwiG

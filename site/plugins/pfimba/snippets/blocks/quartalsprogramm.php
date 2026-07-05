@@ -20,7 +20,7 @@
                 <tr>
                     <th>Datum</th>
                     <th>Aktivität</th>
-                    <th>Leiter</th>
+                    <th>Leitperson</th>
                 </tr>
             </thead>
             <tbody>
@@ -28,7 +28,7 @@
                     <tr>
                         <td data-label="Datum"><?= $eintrag->datum()->toDate('d.m.Y') ?></td>
                         <td data-label="Aktivität"><?= esc($eintrag->aktivitaet()) ?></td>
-                        <td data-label="Leiter"><?= esc($eintrag->leiter()) ?></td>
+                        <td data-label="Leitperson"><?= esc($eintrag->leitperson()) ?></td>
                     </tr>
                 <?php endforeach ?>
             </tbody>
