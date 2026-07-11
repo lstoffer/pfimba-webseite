@@ -26,7 +26,7 @@
             <h3>Weitere Links</h3>
             <p>
                 <?php foreach ($additionalLinks as $additionalLink): ?>
-                    <a class="website" href="<?= $additionalLink->link()->toPage()->url() ?>"><?= $additionalLink->label() ?></a><br>
+                    <a class="website" href="<?= $additionalLink->link()->toUrl() ?>"><?= $additionalLink->label() ?></a><br>
                 <?php endforeach ?>
             </p>
         </div>

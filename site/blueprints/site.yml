@@ -45,8 +45,14 @@ tabs:
               label:
                 type: text
               link:
-                label: Seite
-                type: pages
+                label: Link
+                type: link
+                options:
+                  - url
+                  - page
+                  - file
+                  - email
+                  - tel
 
           socialMediaLinks:
             label: Social Media Links
