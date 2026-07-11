@@ -145,10 +145,6 @@ header#header.border.elternrat::after {
   display: none;
 }
 
-.navigation-logo {
-  display: none;
-}
-
 /* Hamburger toggle */
 .nav-toggle {
   display: none;
@@ -233,17 +229,6 @@ header#header.border.elternrat::after {
 
   .navigation.open {
     transform: translateX(0);
-  }
-
-  .navigation-logo {
-    display: flex;
-    justify-content: center;
-    margin: 0 0 30px;
-  }
-
-  .navigation-logo img {
-    height: 120px;
-    width: auto;
   }
 
   .navigation ul {
