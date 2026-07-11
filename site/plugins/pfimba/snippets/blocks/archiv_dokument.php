@@ -24,10 +24,6 @@
 
         <div class="archiv-dokument-content">
             <div class="archiv-dokument-titel"><?= esc($titel) ?></div>
-
-            <?php if ($jahr): ?>
-                <div class="archiv-dokument-jahr"><?= esc($jahr) ?></div>
-            <?php endif ?>
         </div>
     </a>
 <?php endif ?>

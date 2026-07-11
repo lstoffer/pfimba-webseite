@@ -2,7 +2,7 @@ Title: Pfimba Archiv
 
 ----
 
-Headerimage: 
+Headerimage:
 
 ----
 
@@ -10,7 +10,7 @@ Headerline: abteilung
 
 ----
 
-Dokumente: 
+Dokumente:
 
 ----
 
