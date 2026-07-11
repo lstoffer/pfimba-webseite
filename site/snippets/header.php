@@ -30,9 +30,9 @@ $headerImage = $page->headerImage()->toFile();
     <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
 </head>
 
-<header 
-    id="header" 
-    class="border <?= $page->headerLine()->value() ?>" 
+<header
+    id="header"
+    class="border <?= $page->headerLine()->value() ?><?= $page->isHomePage() ? ' header--home' : '' ?>"
     <?php if($headerImage): ?>style="background-image:url('<?= $headerImage->url() ?>');"<?php endif; ?>
 >
 

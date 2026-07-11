@@ -8,6 +8,10 @@ header#header {
   position: relative;
 }
 
+header#header.header--home {
+  height: 700px;
+}
+
 .header-logo {
   height: 35%;
   width: 15%;
@@ -23,7 +27,7 @@ header#header::after {
   position: absolute;
   left: 0;
   right: 0;
-  bottom: -10;
+  bottom: -28px;
   height: 40px;
 
   background-repeat: repeat-x;
