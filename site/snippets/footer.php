@@ -3,10 +3,20 @@
 <footer id="footer">
   
 
-    <?php 
+    <?php
         $contact = $site->footerContact()->toStructure()->first();
         $additionalLinks = $site->footerLinks()->toStructure();
         $socialMediaLinks = $site->socialMediaLinks()->toStructure();
+
+        $additionalLinkGroups = [[]];
+
+        foreach ($additionalLinks as $additionalLink) {
+            if ($additionalLink->neueGruppe()->toBool() && !empty(end($additionalLinkGroups))) {
+                $additionalLinkGroups[] = [];
+            }
+
+            $additionalLinkGroups[count($additionalLinkGroups) - 1][] = $additionalLink;
+        }
     ?>
 
     <div class="footer col1">
@@ -24,11 +34,13 @@
     <div class="footer col2">
         <div class="one-col">
             <h3>Weitere Links</h3>
-            <p>
-                <?php foreach ($additionalLinks as $additionalLink): ?>
-                    <a class="website" href="<?= $additionalLink->link()->toUrl() ?>"><?= $additionalLink->label() ?></a><br>
-                <?php endforeach ?>
-            </p>
+            <?php foreach ($additionalLinkGroups as $additionalLinkGroup): ?>
+                <p class="footer-link-group">
+                    <?php foreach ($additionalLinkGroup as $additionalLink): ?>
+                        <a class="website" href="<?= $additionalLink->link()->toUrl() ?>" target="_blank" rel="noopener"><?= $additionalLink->label() ?></a><br>
+                    <?php endforeach ?>
+                </p>
+            <?php endforeach ?>
         </div>
     </div>
 

@@ -42,6 +42,10 @@ tabs:
             label: Weitere Links
             type: structure
             fields:
+              neueGruppe:
+                label: Neue Gruppe
+                help: Fügt vor diesem Link einen Abstand ein, um eine neue Gruppe zu beginnen
+                type: toggle
               label:
                 type: text
               link:
