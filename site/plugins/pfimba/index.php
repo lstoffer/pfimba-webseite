@@ -1,5 +1,6 @@
 <?php
 
+use Kirby\Content\Field;
 use Kirby\Filesystem\Dir;
 
 Kirby::plugin('pmr/pfimba', [
@@ -35,6 +36,32 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/download_button' => __DIR__ . '/snippets/blocks/download_button.php',
         'blocks/akkordeon' => __DIR__ . '/snippets/blocks/akkordeon.php',
         'blocks/bild' => __DIR__ . '/snippets/blocks/bild.php',
+    ],
+
+    'fieldMethods' => [
+        // Formats a date field as "WD dd.mm.YYYY" with the German
+        // two-letter weekday abbreviation (MO, DI, MI, DO, FR, SA, SO)
+        'toWeekdayDate' => function (Field $field, string $format = 'd.m.Y') {
+            $timestamp = $field->toDate();
+
+            if ($timestamp === null) {
+                return null;
+            }
+
+            $wochentage = [
+                1 => 'MO',
+                2 => 'DI',
+                3 => 'MI',
+                4 => 'DO',
+                5 => 'FR',
+                6 => 'SA',
+                7 => 'SO',
+            ];
+
+            $wochentag = $wochentage[(int)date('N', $timestamp)];
+
+            return $wochentag . ' ' . date($format, $timestamp);
+        },
     ],
 
     'fileMethods' => [

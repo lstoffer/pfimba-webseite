@@ -11,7 +11,25 @@ fields:
   verantwortung:
     label: Verantwortung
     type: text
+  mehrtaegig:
+    label: Mehrtägig
+    help: Aktivieren für Anlässe mit Start- und Enddatum
+    type: toggle
   datum:
-    label: Datum
+    label: Datum / Startdatum
     type: date
     required: true
+  enddatum:
+    label: Enddatum
+    type: date
+    required: true
+    when:
+      mehrtaegig: true
+  link:
+    label: Link
+    type: link
+    required: false
+    options:
+      - url
+      - page
+      - file

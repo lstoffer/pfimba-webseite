@@ -12,7 +12,13 @@
             $nextAnlass = $jahresprogramm->aktivitaeten()->toBlocks()
                 ->filterBy('type', 'anlass')
                 ->filter(fn ($block) => $block->name()->isNotEmpty() && $block->datum()->isNotEmpty())
-                ->filter(fn ($block) => $block->datum()->toDate() >= strtotime('today'))
+                ->filter(function ($block) {
+                    $ende = $block->mehrtaegig()->toBool() && $block->enddatum()->isNotEmpty()
+                        ? $block->enddatum()->toDate()
+                        : $block->datum()->toDate();
+
+                    return $ende >= strtotime('today');
+                })
                 ->sortBy(fn ($block) => $block->datum()->toDate(), 'asc')
                 ->first();
         }
