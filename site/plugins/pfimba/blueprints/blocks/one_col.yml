@@ -14,3 +14,5 @@ fields:
       - beitrag
       - quartalsprogramm
       - tabelle
+      - download_button
+      - akkordeon

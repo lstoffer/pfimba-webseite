@@ -16,6 +16,8 @@ fields:
       - beitrag
       - quartalsprogramm
       - tabelle
+      - download_button
+      - akkordeon
 
   content_center:
     label: Rechter Spalteninhalt
@@ -30,6 +32,8 @@ fields:
       - beitrag
       - quartalsprogramm
       - tabelle
+      - download_button
+      - akkordeon
 
   content_right:
     label: Rechter Spalteninhalt
@@ -44,3 +48,5 @@ fields:
       - beitrag
       - quartalsprogramm
       - tabelle
+      - download_button
+      - akkordeon

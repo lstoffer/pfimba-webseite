@@ -2,7 +2,7 @@ Title: Startseite
 
 ----
 
-Headerimage: - file://alky3hsopfzvrmgd
+Headerimage: 
 
 ----
 

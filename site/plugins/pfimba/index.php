@@ -15,6 +15,8 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/quartalsprogramm' => __DIR__ . '/blueprints/blocks/quartalsprogramm.yml',
         'blocks/archiv_dokument' => __DIR__ . '/blueprints/blocks/archiv_dokument.yml',
         'blocks/tabelle' => __DIR__ . '/blueprints/blocks/tabelle.yml',
+        'blocks/download_button' => __DIR__ . '/blueprints/blocks/download_button.yml',
+        'blocks/akkordeon' => __DIR__ . '/blueprints/blocks/akkordeon.yml',
     ],
 
     'snippets' => [
@@ -29,6 +31,8 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/quartalsprogramm' => __DIR__ . '/snippets/blocks/quartalsprogramm.php',
         'blocks/archiv_dokument' => __DIR__ . '/snippets/blocks/archiv_dokument.php',
         'blocks/tabelle' => __DIR__ . '/snippets/blocks/tabelle.php',
+        'blocks/download_button' => __DIR__ . '/snippets/blocks/download_button.php',
+        'blocks/akkordeon' => __DIR__ . '/snippets/blocks/akkordeon.php',
     ],
 
     'fileMethods' => [

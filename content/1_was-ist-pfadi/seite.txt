@@ -2,7 +2,7 @@ Title: Was ist Pfadi?
 
 ----
 
-Headerimage: 
+Headerimage:
 
 ----
 
@@ -10,7 +10,7 @@ Headerline: abteilung
 
 ----
 
-Inhaltselemente: 
+Inhaltselemente:
 
 ----
 
