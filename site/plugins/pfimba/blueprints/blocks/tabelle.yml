@@ -1,0 +1,80 @@
+type: tabelle
+title: Tabelle
+label: "{{ titel }}"
+preview: fields
+wysiwyg: true
+
+fields:
+  titel:
+    label: Titel
+    type: text
+    required: false
+
+  spaltenInfo:
+    type: info
+    text: Nur Spalten mit ausgefülltem Titel werden angezeigt. Leere Spalten am Ende einfach nicht ausfüllen.
+
+  spalte1:
+    label: Spalte 1 Titel
+    type: text
+    required: true
+
+  spalte2:
+    label: Spalte 2 Titel
+    type: text
+    required: false
+
+  spalte3:
+    label: Spalte 3 Titel
+    type: text
+    required: false
+
+  spalte4:
+    label: Spalte 4 Titel
+    type: text
+    required: false
+
+  spalte5:
+    label: Spalte 5 Titel
+    type: text
+    required: false
+
+  spalte6:
+    label: Spalte 6 Titel
+    type: text
+    required: false
+
+  zeilen:
+    label: Zeilen
+    type: structure
+    fields:
+      zelle1:
+        label: Spalte 1
+        type: writer
+        inline: true
+        marks: [bold]
+      zelle2:
+        label: Spalte 2
+        type: writer
+        inline: true
+        marks: [bold]
+      zelle3:
+        label: Spalte 3
+        type: writer
+        inline: true
+        marks: [bold]
+      zelle4:
+        label: Spalte 4
+        type: writer
+        inline: true
+        marks: [bold]
+      zelle5:
+        label: Spalte 5
+        type: writer
+        inline: true
+        marks: [bold]
+      zelle6:
+        label: Spalte 6
+        type: writer
+        inline: true
+        marks: [bold]

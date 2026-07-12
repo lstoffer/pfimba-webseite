@@ -42,11 +42,21 @@ tabs:
             label: Weitere Links
             type: structure
             fields:
+              neueGruppe:
+                label: Neue Gruppe
+                help: Fügt vor diesem Link einen Abstand ein, um eine neue Gruppe zu beginnen
+                type: toggle
               label:
                 type: text
               link:
-                label: Seite
-                type: pages
+                label: Link
+                type: link
+                options:
+                  - url
+                  - page
+                  - file
+                  - email
+                  - tel
 
           socialMediaLinks:
             label: Social Media Links

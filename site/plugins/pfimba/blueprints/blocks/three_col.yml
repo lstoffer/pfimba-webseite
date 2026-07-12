@@ -15,6 +15,10 @@ fields:
       - google_fotos
       - beitrag
       - quartalsprogramm
+      - tabelle
+      - download_button
+      - akkordeon
+      - bild
 
   content_center:
     label: Rechter Spalteninhalt
@@ -28,6 +32,10 @@ fields:
       - google_fotos
       - beitrag
       - quartalsprogramm
+      - tabelle
+      - download_button
+      - akkordeon
+      - bild
 
   content_right:
     label: Rechter Spalteninhalt
@@ -41,3 +49,7 @@ fields:
       - google_fotos
       - beitrag
       - quartalsprogramm
+      - tabelle
+      - download_button
+      - akkordeon
+      - bild

@@ -1,9 +1,4 @@
 <nav class="navigation" id="site-navigation">
-<div class="navigation-logo">
-    <a href="/">
-        <img src="<?= url('/assets/images/logo/logo_rgb.png') ?>" alt="logo">
-    </a>
-</div>
 <ul>
 <?php foreach($site->children()->listed() as $item): ?>
     <?php $hasChildren = $item->children()->listed()->count() > 0 ?>

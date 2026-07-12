@@ -9,6 +9,31 @@
   gap: 0.8rem;
 }
 
+.anlass-button {
+  display: inline-flex;
+  align-items: center;
+  justify-self: start;
+  width: fit-content;
+  margin-top: 0.4rem;
+
+  padding: 0.6rem 1.3rem;
+  border-radius: 999px;
+  background: var(--color-abteilung);
+
+  font-family: "SuisseIntl SemiBold";
+  font-size: 16px;
+  color: white;
+  text-decoration: none;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.anlass-button:hover,
+.anlass-button:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
 .anlass-name {
   margin: 0;
   font-family: "SuisseIntl SemiBold";

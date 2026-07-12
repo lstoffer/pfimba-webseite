@@ -82,8 +82,10 @@ fields:
       toggle: true
     required: true
     default: normal
+    help: "\"Füllt Fläche\" wirkt nur, wenn das Bild links oder rechts vom Text steht."
     options:
       small: Klein
       normal: Normal
       large: Groß
       full: Volle Breite
+      fill: Füllt Fläche (Breite & Höhe)

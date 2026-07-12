@@ -40,6 +40,10 @@ footer a.email {
     float: none;
 }
 
+.footer-link-group + .footer-link-group {
+    margin-top: 1rem;
+}
+
 .footer-logos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

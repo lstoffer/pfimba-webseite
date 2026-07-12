@@ -1,0 +1,120 @@
+.tabelle {
+  padding: 2rem;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.tabelle-titel {
+  margin: 0 0 1.5rem;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 26px;
+}
+
+.tabelle-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabelle-table th {
+  text-align: left;
+  padding: 0.8rem 1rem;
+  font-family: "SuisseIntl SemiBold";
+  font-size: 18px;
+  color: white;
+  background: var(--color-abteilung);
+}
+
+.tabelle-table th:first-child {
+  border-top-left-radius: 6px;
+}
+
+.tabelle-table th:last-child {
+  border-top-right-radius: 6px;
+}
+
+.tabelle--biber .tabelle-table th {
+  background: var(--color-biber);
+  color: black;
+}
+
+.tabelle--woelfe .tabelle-table th {
+  background: var(--color-woelfe);
+}
+
+.tabelle--pfadis .tabelle-table th {
+  background: var(--color-pfadis);
+}
+
+.tabelle--pios .tabelle-table th {
+  background: var(--color-pios);
+}
+
+.tabelle--rover .tabelle-table th {
+  background: var(--color-rover);
+}
+
+.tabelle--elternrat .tabelle-table th {
+  background: var(--color-komitee);
+}
+
+.tabelle-table td {
+  padding: 0.8rem 1rem;
+  font-family: "SuisseNeue Light";
+  font-size: 18px;
+}
+
+.tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-abteilung) 12%, white);
+}
+
+.tabelle--biber .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-biber) 15%, white);
+}
+
+.tabelle--woelfe .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-woelfe) 12%, white);
+}
+
+.tabelle--pfadis .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-pfadis) 12%, white);
+}
+
+.tabelle--pios .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-pios) 12%, white);
+}
+
+.tabelle--rover .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-rover) 12%, white);
+}
+
+.tabelle--elternrat .tabelle-table tbody tr:nth-child(even) {
+  background: color-mix(in srgb, var(--color-komitee) 12%, white);
+}
+
+@media (max-width: 600px) {
+  .tabelle-table thead {
+    display: none;
+  }
+
+  .tabelle-table,
+  .tabelle-table tbody,
+  .tabelle-table tr,
+  .tabelle-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .tabelle-table tr {
+    padding: 0.8rem 1rem;
+  }
+
+  .tabelle-table td {
+    padding: 0.3rem 0;
+  }
+
+  .tabelle-table td::before {
+    content: attr(data-label) ": ";
+    font-family: "SuisseIntl SemiBold";
+  }
+}

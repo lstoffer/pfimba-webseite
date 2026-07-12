@@ -1,11 +1,23 @@
-type: one_col
-title: Eine Spalte
+type: akkordeon
+title: Akkordeon
+label: "{{ titel }}"
 preview: fields
 wysiwyg: true
+
 fields:
-  spalteninhalt:
-    label: Spalteninhalt
+  titel:
+    label: Titel
+    type: text
+    required: true
+
+  offenStandard:
+    label: Standardmässig geöffnet
+    type: toggle
+
+  inhalt:
+    label: Inhalt
     type: blocks
+    pretty: true
     fieldsets:
       - aktivitaet
       - leiter
@@ -15,5 +27,4 @@ fields:
       - quartalsprogramm
       - tabelle
       - download_button
-      - akkordeon
       - bild

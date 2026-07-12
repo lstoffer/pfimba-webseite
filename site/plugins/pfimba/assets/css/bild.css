@@ -1,0 +1,54 @@
+.bild-block {
+  display: block;
+  border-radius: 6px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.bild-block img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a.bild-block:hover,
+a.bild-block:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* Größe */
+.bild-block--groesse-viertel {
+  width: 25%;
+}
+
+.bild-block--groesse-haelfte {
+  width: 50%;
+}
+
+.bild-block--groesse-dreiviertel {
+  width: 75%;
+}
+
+.bild-block--groesse-voll {
+  width: 100%;
+}
+
+/* Ausrichtung */
+.bild-block--ausrichtung-links {
+  justify-self: start;
+}
+
+.bild-block--ausrichtung-mitte {
+  justify-self: center;
+}
+
+.bild-block--ausrichtung-rechts {
+  justify-self: end;
+}
+
+@media (max-width: 600px) {
+  .bild-block {
+    width: 100% !important;
+  }
+}

@@ -19,25 +19,25 @@ Footercontact:
 Footerlinks:
 
 - 
+  neuegruppe: 'false'
   label: Impressum
-  link:
-    - page://w3unpqnv7jwukcex
+  link: page://w3unpqnv7jwukcex
 - 
+  neuegruppe: 'false'
   label: Datenschutz
-  link:
-    - page://62sg0qgnrpvnbrzk
+  link: page://62sg0qgnrpvnbrzk
 - 
+  neuegruppe: 'false'
   label: Sponsoren
-  link:
-    - page://seunyhxqssp0ippi
+  link: page://seunyhxqssp0ippi
 - 
+  neuegruppe: 'false'
   label: Froschbatzen
-  link:
-    - page://qmy4uyif0yfojr9s
+  link: page://qmy4uyif0yfojr9s
 - 
+  neuegruppe: 'false'
   label: Statuten
-  link:
-    - page://1oignsnqpbveb1za
+  link: page://1oignsnqpbveb1za
 
 ----
 
