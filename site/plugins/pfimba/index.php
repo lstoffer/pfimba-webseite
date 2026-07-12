@@ -17,6 +17,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/tabelle' => __DIR__ . '/blueprints/blocks/tabelle.yml',
         'blocks/download_button' => __DIR__ . '/blueprints/blocks/download_button.yml',
         'blocks/akkordeon' => __DIR__ . '/blueprints/blocks/akkordeon.yml',
+        'blocks/bild' => __DIR__ . '/blueprints/blocks/bild.yml',
     ],
 
     'snippets' => [
@@ -33,6 +34,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/tabelle' => __DIR__ . '/snippets/blocks/tabelle.php',
         'blocks/download_button' => __DIR__ . '/snippets/blocks/download_button.php',
         'blocks/akkordeon' => __DIR__ . '/snippets/blocks/akkordeon.php',
+        'blocks/bild' => __DIR__ . '/snippets/blocks/bild.php',
     ],
 
     'fileMethods' => [

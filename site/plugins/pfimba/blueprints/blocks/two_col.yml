@@ -18,6 +18,7 @@ fields:
       - tabelle
       - download_button
       - akkordeon
+      - bild
 
   content_right:
     label: Rechter Spalteninhalt
@@ -34,3 +35,4 @@ fields:
       - tabelle
       - download_button
       - akkordeon
+      - bild

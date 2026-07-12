@@ -25,7 +25,8 @@ $headerImage = $page->headerImage()->toFile();
         'media/plugins/pmr/pfimba/css/quartalsprogramm.css',
         'media/plugins/pmr/pfimba/css/tabelle.css',
         'media/plugins/pmr/pfimba/css/download_button.css',
-        'media/plugins/pmr/pfimba/css/akkordeon.css'
+        'media/plugins/pmr/pfimba/css/akkordeon.css',
+        'media/plugins/pmr/pfimba/css/bild.css'
     ])?>
     <?= js('/assets/js/navigation.js') ?>
     <?= js('/assets/js/galerie-filter.js') ?>

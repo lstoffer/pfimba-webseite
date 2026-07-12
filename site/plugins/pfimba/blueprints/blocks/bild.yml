@@ -1,0 +1,49 @@
+type: bild
+title: Bild
+preview: fields
+wysiwyg: true
+
+fields:
+  bild:
+    label: Bild
+    type: files
+    min: 1
+    max: 1
+    required: true
+    layout: cards
+    uploads:
+      parent: page
+      accept:
+        extension: [jpg, jpeg, png, webp]
+
+  link:
+    label: Link
+    type: link
+    required: false
+    options:
+      - url
+      - page
+      - file
+      - email
+      - tel
+
+  groesse:
+    label: Größe
+    type: select
+    required: true
+    default: voll
+    options:
+      viertel: 25%
+      haelfte: 50%
+      dreiviertel: 75%
+      voll: 100%
+
+  ausrichtung:
+    label: Ausrichtung
+    type: select
+    required: true
+    default: mitte
+    options:
+      links: Links
+      mitte: Mitte
+      rechts: Rechts
