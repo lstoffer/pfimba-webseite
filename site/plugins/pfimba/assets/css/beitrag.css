@@ -205,6 +205,42 @@
 }
 
 /* ============================= */
+/* FILL (side-by-side only)      */
+/* Only takes effect when combined with a left/right position   */
+/* class, so it is automatically a no-op for top/bottom layouts */
+/* ============================= */
+
+.beitrag--img-fill.beitrag--left-top .beitrag-content,
+.beitrag--img-fill.beitrag--left-center .beitrag-content,
+.beitrag--img-fill.beitrag--left-bottom .beitrag-content,
+.beitrag--img-fill.beitrag--right-top .beitrag-content,
+.beitrag--img-fill.beitrag--right-center .beitrag-content,
+.beitrag--img-fill.beitrag--right-bottom .beitrag-content {
+  grid-template-columns: 1fr 1fr;
+}
+
+.beitrag--img-fill.beitrag--left-top .beitrag-bild,
+.beitrag--img-fill.beitrag--left-center .beitrag-bild,
+.beitrag--img-fill.beitrag--left-bottom .beitrag-bild,
+.beitrag--img-fill.beitrag--right-top .beitrag-bild,
+.beitrag--img-fill.beitrag--right-center .beitrag-bild,
+.beitrag--img-fill.beitrag--right-bottom .beitrag-bild {
+  max-width: none;
+  width: 100%;
+  height: 100%;
+  align-self: stretch;
+}
+
+.beitrag--img-fill.beitrag--left-top .beitrag-bild img,
+.beitrag--img-fill.beitrag--left-center .beitrag-bild img,
+.beitrag--img-fill.beitrag--left-bottom .beitrag-bild img,
+.beitrag--img-fill.beitrag--right-top .beitrag-bild img,
+.beitrag--img-fill.beitrag--right-center .beitrag-bild img,
+.beitrag--img-fill.beitrag--right-bottom .beitrag-bild img {
+  height: 100%;
+}
+
+/* ============================= */
 /* MOBILE                        */
 /* ============================= */
 
