@@ -76,6 +76,12 @@ p {
   margin: 0;
 }
 
+strong,
+b {
+  font-family: "SuisseIntl Bold";
+  font-weight: normal;
+}
+
 a,
 a.website,
 a.email,

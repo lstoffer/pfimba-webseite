@@ -317,3 +317,10 @@ header#header.border.elternrat::after {
 body.nav-open {
   overflow: hidden;
 }
+
+@media (max-width: 900px) {
+  .header-logo {
+    height: 140px;
+    width: 100%;
+  }
+}
