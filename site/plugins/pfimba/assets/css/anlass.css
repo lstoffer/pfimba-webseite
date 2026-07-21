@@ -9,6 +9,10 @@
   gap: 0.8rem;
 }
 
+.anlass-stufen {
+  margin-top: -0.2rem;
+}
+
 .anlass-button {
   display: inline-flex;
   align-items: center;
