@@ -93,6 +93,10 @@
 }
 
 @media (max-width: 600px) {
+  .tabelle {
+    padding: 1rem;
+  }
+
   .tabelle-table thead {
     display: none;
   }
@@ -106,7 +110,7 @@
   }
 
   .tabelle-table tr {
-    padding: 0.8rem 1rem;
+    padding: 0.6rem 0;
   }
 
   .tabelle-table td {

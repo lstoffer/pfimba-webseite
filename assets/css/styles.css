@@ -7,6 +7,7 @@ h1 {
   font-family: "SuisseIntl Thin";
   font-size: 70px;
   margin: 20px 0;
+  overflow-wrap: break-word;
 }
 
 h2 {
@@ -14,6 +15,7 @@ h2 {
   font-family: "SuisseIntl SemiBold";
   font-size: 45px;
   margin: 16px 0;
+  overflow-wrap: break-word;
 }
 
 h3 {
@@ -21,6 +23,7 @@ h3 {
   font-family: "SuisseIntl SemiBold";
   font-size: 30px;
   margin: 10px 0;
+  overflow-wrap: break-word;
 }
 
 h4 {
@@ -29,6 +32,40 @@ h4 {
   font-size: 26px;
   line-height: 28px;
   margin: 0;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  h4 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
 }
 
 p {
@@ -37,6 +74,12 @@ p {
   font-size: 20px;
   line-height: 28px;
   margin: 0;
+}
+
+strong,
+b {
+  font-family: "SuisseIntl Bold";
+  font-weight: normal;
 }
 
 a,

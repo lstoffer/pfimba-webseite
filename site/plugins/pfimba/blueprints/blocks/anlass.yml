@@ -11,6 +11,18 @@ fields:
   verantwortung:
     label: Verantwortung
     type: text
+  stufe:
+    label: Stufen
+    type: multiselect
+    required: false
+    options:
+      abteilung: Abteilung
+      biber: Biber
+      woelfe: Wölfe
+      pfadis: Pfadis
+      pios: Pios
+      rover: Rover
+      elternrat: Elternrat
   mehrtaegig:
     label: Mehrtägig
     help: Aktivieren für Anlässe mit Start- und Enddatum

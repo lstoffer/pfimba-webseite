@@ -5,6 +5,17 @@
   $mehrtaegig     = $block->mehrtaegig()->toBool();
   $enddatum       = $block->enddatum();
   $link           = $block->link()->toUrl();
+  $stufen         = $block->stufe()->split();
+
+  $stufenLabelMap = [
+      'abteilung' => 'Abteilung',
+      'biber'     => 'Biber',
+      'woelfe'    => 'Wölfe',
+      'pfadis'    => 'Pfadis',
+      'pios'      => 'Pios',
+      'rover'     => 'Rover',
+      'elternrat' => 'Elternrat',
+  ];
 ?>
 
 <div class="anlass">
@@ -22,6 +33,16 @@
       <?php else: ?>
         <?= $datum->toWeekdayDate('d.m.Y') ?>
       <?php endif ?>
+    </div>
+  <?php endif ?>
+
+  <?php if (!empty($stufen)): ?>
+    <div class="anlass-stufen aktivitaet-stufen">
+      <?php foreach ($stufen as $stufe): ?>
+        <span class="stufe stufe-<?= esc($stufe) ?>">
+          <?= esc($stufenLabelMap[$stufe] ?? ucfirst($stufe)) ?>
+        </span>
+      <?php endforeach ?>
     </div>
   <?php endif ?>
 
