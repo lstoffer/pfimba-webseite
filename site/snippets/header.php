@@ -6,7 +6,7 @@ $attentionActive = $page->isHomePage()
     && $page->attentionActive()->toBool()
     && $page->attentionText()->isNotEmpty();
 
-$attentionLink = $attentionActive ? $page->attentionLink()->toUrl() : null;
+$attentionLink = $attentionActive ? $page->attentionLink()->toLinkUrl() : null;
 
 ?>
 

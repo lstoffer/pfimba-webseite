@@ -366,4 +366,12 @@ body.nav-open {
     height: 140px;
     width: 100%;
   }
+
+  header#header {
+    height: 350px;
+  }
+
+  header#header.header--home {
+    height: 400px;
+  }
 }

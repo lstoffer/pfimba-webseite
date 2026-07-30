@@ -38,7 +38,7 @@
                 <p class="footer-link-group">
                     <?php foreach ($additionalLinkGroup as $additionalLink): ?>
                         <?php
-                            $additionalLinkUrl = $additionalLink->link()->toUrl();
+                            $additionalLinkUrl = $additionalLink->link()->toLinkUrl();
                             $additionalLinkIsExternal = str_starts_with($additionalLinkUrl, 'http') && !str_starts_with($additionalLinkUrl, site()->url());
                         ?>
                         <a class="website" href="<?= $additionalLinkUrl ?>"<?php if ($additionalLinkIsExternal): ?> target="_blank" rel="noopener"<?php endif; ?>><?= $additionalLink->label() ?></a><br>

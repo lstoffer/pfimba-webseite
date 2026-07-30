@@ -1,6 +1,10 @@
 title: Galerie
 extends: options/base_options
 
+options:
+  update:
+    social-media: true
+
 columns:
   main:
     width: 2/3

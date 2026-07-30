@@ -2,8 +2,10 @@ options:
   changeTemplate:
     - aktivitaeten
     - archiv
+    - bekleidung
     - galerie
     - home
     - jahresprogramm
+    - pfadiheim
     - seite
     - stufe

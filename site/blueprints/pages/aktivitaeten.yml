@@ -1,6 +1,12 @@
 title: Aktivitäten
 extends: options/base_options
 
+options:
+  update:
+    leiter: true
+    stufenleiter: true
+    social-media: true
+
 columns:
   main:
     width: 2/3
