@@ -1,7 +1,26 @@
 <?php
 
+use Kirby\Cms\File;
+use Kirby\Cms\Page;
 use Kirby\Content\Field;
+use Kirby\Exception\NotFoundException;
+use Kirby\Exception\PermissionException;
 use Kirby\Filesystem\Dir;
+
+// Kirby's file permissions are independent of the parent page's own
+// "update" permission, so a role with broad file rights can otherwise
+// create/replace/delete files even on pages it may only view, not edit.
+// This ties file actions to the parent page's "update" permission.
+function pfimbaGuardFileParent(File $file): void
+{
+    $parent = $file->parent();
+
+    if ($parent instanceof Page && $parent->permissions()->can('update') !== true) {
+        throw new PermissionException(
+            message: 'Du darfst auf dieser Seite keine Dateien verwalten.'
+        );
+    }
+}
 
 Kirby::plugin('pmr/pfimba', [
     'blueprints' => [
@@ -62,6 +81,36 @@ Kirby::plugin('pmr/pfimba', [
 
             return $wochentag . ' ' . date($format, $timestamp);
         },
+
+        // Like toUrl(), but treats a bare domain/path typed into a "url"
+        // link field (e.g. "example.com") as external instead of resolving
+        // it as a path relative to this site, so editors don't have to
+        // type the "https://" scheme themselves.
+        'toLinkUrl' => function (Field $field) {
+            $value = trim($field->value ?? '');
+
+            if ($value === '') {
+                return null;
+            }
+
+            $hasScheme = str_contains($value, '://')
+                || str_starts_with($value, 'mailto:')
+                || str_starts_with($value, 'tel:')
+                || str_starts_with($value, '/')
+                || str_starts_with($value, '#')
+                || str_starts_with($value, './')
+                || str_starts_with($value, '../');
+
+            if ($hasScheme === false) {
+                $value = 'https://' . $value;
+            }
+
+            try {
+                return $field->value($value)->toUrl();
+            } catch (NotFoundException) {
+                return null;
+            }
+        },
     ],
 
     'fileMethods' => [
@@ -93,6 +142,26 @@ Kirby::plugin('pmr/pfimba', [
 
             return url('media/pdf-previews/' . $filename);
         },
+    ],
+
+    'validators' => [
+        // Same as Kirby's built-in "url" validator, but the scheme/"//"
+        // prefix is optional, so editors can type "example.com" in a url
+        // field without the Panel rejecting it for missing "https://".
+        // toLinkUrl() adds the "https://" back when the value is rendered.
+        'url' => function ($value): bool {
+            $regex = '%^(?:(?:(?:https?|ftp):)?\/\/)?(?:\S+(?::\S*)?@)?(?:(?!(?:10)(?:\.\d{1,3}){3})(?!(?:169\.254|192\.168)(?:\.\d{1,3}){2})(?!172\.(?:1[6-9]|2\d|3[0-1])(?:\.\d{1,3}){2})(?:[1-9]\d?|1\d\d|2[01]\d|22[0-3])(?:\.(?:1?\d{1,2}|2[0-4]\d|25[0-5])){2}(?:\.(?:[1-9]\d?|1\d\d|2[0-4]\d|25[0-4]))|(?:localhost)|(?:[a-z0-9\x{00a1}-\x{ffff}](?:[a-z0-9\x{00a1}-\x{ffff}_-]{0,62}[a-z0-9\x{00a1}-\x{ffff}])?\.)+(?:[a-z\x{00a1}-\x{ffff}]{2,}))(?::\d{2,5})?(?:[/?#]\S*)?$%iuS';
+            return preg_match($regex, $value ?? '') !== 0;
+        },
+    ],
+
+    'hooks' => [
+        'file.create:before' => fn (File $file) => pfimbaGuardFileParent($file),
+        'file.delete:before' => fn (File $file) => pfimbaGuardFileParent($file),
+        'file.replace:before' => fn (File $file) => pfimbaGuardFileParent($file),
+        'file.update:before' => fn (File $file) => pfimbaGuardFileParent($file),
+        'file.changeName:before' => fn (File $file) => pfimbaGuardFileParent($file),
+        'file.changeSort:before' => fn (File $file) => pfimbaGuardFileParent($file),
     ],
 
 ]);

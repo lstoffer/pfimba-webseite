@@ -1,0 +1,60 @@
+title: Bekleidungsstelle
+
+permissions:
+  access:
+    account: true
+    languages: false
+    panel: true
+    site: true
+    system: false
+    users: false
+  files:
+    access: true
+    changeName: true
+    changeTemplate: false
+    create: true
+    delete: true
+    replace: true
+    sort: true
+    update: true
+  languages:
+    create: false
+    delete: false
+    update: false
+  pages:
+    access: true
+    changeSlug: false
+    changeStatus: false
+    changeTemplate: false
+    create: false
+    delete: false
+    duplicate: false
+    list: true
+    move: false
+    preview: true
+    read: true
+    sort: false
+    update: false
+  site:
+    access: true
+    changeTitle: false
+    update: false
+  users:
+    access: false
+    changeEmail: false
+    changeLanguage: false
+    changeName: false
+    changePassword: false
+    changeRole: false
+    create: false
+    delete: false
+    update: false
+  user:
+    access: true
+    changeEmail: true
+    changeLanguage: true
+    changeName: true
+    changePassword: true
+    changeRole: false
+    delete: false
+    update: true

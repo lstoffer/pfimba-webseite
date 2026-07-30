@@ -63,6 +63,49 @@ header#header.border.elternrat::after {
   background-image: url("/assets/images/striche/06_elternrat_strich.png");
 }
 
+/* Attention badge */
+.attention-badge {
+  position: absolute;
+  bottom: -50px;
+  right: 5%;
+  z-index: 15;
+  width: clamp(150px, 10vw, 140px);
+  height: clamp(150px, 10vw, 140px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 22px;
+  border-radius: 50%;
+  background: var(--color-abteilung);
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-family: "SuisseIntl SemiBold";
+  font-size: clamp(20px, 1.3vw, 16px);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  transform: rotate(15deg);
+  transition: transform 0.3s ease;
+}
+
+.attention-badge:hover {
+  transform: rotate(15deg) scale(1.05);
+}
+
+@media (max-width: 900px) {
+  .attention-badge {
+    width: 90px;
+    height: 90px;
+    padding: 14px;
+    font-size: 12px;
+  }
+}
+
 /* Navigation */
 .navigation {
   width: 85%;
@@ -322,5 +365,13 @@ body.nav-open {
   .header-logo {
     height: 140px;
     width: 100%;
+  }
+
+  header#header {
+    height: 350px;
+  }
+
+  header#header.header--home {
+    height: 400px;
   }
 }

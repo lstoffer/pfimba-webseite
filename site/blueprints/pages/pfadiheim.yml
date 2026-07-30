@@ -1,9 +1,9 @@
-title: Pfimba Archiv
+title: Pfadiheim
 extends: options/base_options
 
 options:
   update:
-    social-media: true
+    pfadiheim: true
 
 columns:
   main:
@@ -41,15 +41,16 @@ columns:
             type: line
 
           inhalt:
-            label: Dokumente
+            label: Inhalt
             type: headline
 
-          dokumente:
-            label: Archiv Dokumente
+          inhaltselemente:
             type: blocks
             pretty: true
             fieldsets:
-              - archiv_dokument
+              - one_col
+              - two_col
+              - three_col
 
   sidebar:
     width: 1/3

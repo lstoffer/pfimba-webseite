@@ -1,6 +1,10 @@
 title: Stufe
 extends: options/base_options
 
+options:
+  update:
+    stufenleiter: true
+
 columns:
   main:
     width: 2/3

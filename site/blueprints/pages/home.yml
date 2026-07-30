@@ -36,6 +36,38 @@ columns:
           line:
             type: line
 
+          attentionHeadline:
+            label: Aufmerksamkeits-Element
+            type: headline
+
+          attentionActive:
+            label: Anzeigen
+            help: Zeigt ein rundes Element mit Text im Header an (nur auf der Startseite)
+            type: toggle
+            default: false
+
+          attentionText:
+            label: Text
+            type: text
+            maxlength: 35
+            counter: true
+            when:
+              attentionActive: true
+
+          attentionLink:
+            label: Link
+            type: link
+            options:
+              - url
+              - page
+              - email
+              - tel
+            when:
+              attentionActive: true
+
+          line2:
+            type: line
+
           naechsterAnlassPosition:
             label: Position "Nächster Anlass"
             type: select
