@@ -37,7 +37,11 @@
             <?php foreach ($additionalLinkGroups as $additionalLinkGroup): ?>
                 <p class="footer-link-group">
                     <?php foreach ($additionalLinkGroup as $additionalLink): ?>
-                        <a class="website" href="<?= $additionalLink->link()->toUrl() ?>" target="_blank" rel="noopener"><?= $additionalLink->label() ?></a><br>
+                        <?php
+                            $additionalLinkUrl = $additionalLink->link()->toUrl();
+                            $additionalLinkIsExternal = str_starts_with($additionalLinkUrl, 'http') && !str_starts_with($additionalLinkUrl, site()->url());
+                        ?>
+                        <a class="website" href="<?= $additionalLinkUrl ?>"<?php if ($additionalLinkIsExternal): ?> target="_blank" rel="noopener"<?php endif; ?>><?= $additionalLink->label() ?></a><br>
                     <?php endforeach ?>
                 </p>
             <?php endforeach ?>

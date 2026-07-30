@@ -2,6 +2,12 @@
 
 $headerImage = $page->headerImage()->toFile();
 
+$attentionActive = $page->isHomePage()
+    && $page->attentionActive()->toBool()
+    && $page->attentionText()->isNotEmpty();
+
+$attentionLink = $attentionActive ? $page->attentionLink()->toUrl() : null;
+
 ?>
 
 <head>
@@ -59,6 +65,14 @@ $headerImage = $page->headerImage()->toFile();
     </button>
 
     <?php snippet('navigation') ?>
+
+    <?php if ($attentionActive): ?>
+        <<?= $attentionLink ? 'a' : 'div' ?>
+            class="attention-badge"
+            lang="de"
+            <?php if ($attentionLink): ?>href="<?= esc($attentionLink) ?>" target="_blank" rel="noopener"<?php endif; ?>
+        ><?= esc($page->attentionText()->value()) ?></<?= $attentionLink ? 'a' : 'div' ?>>
+    <?php endif; ?>
 
 </header>
 
