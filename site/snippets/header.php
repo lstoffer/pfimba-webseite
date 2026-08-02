@@ -7,6 +7,7 @@ $attentionActive = $page->isHomePage()
     && $page->attentionText()->isNotEmpty();
 
 $attentionLink = $attentionActive ? $page->attentionLink()->toLinkUrl() : null;
+$attentionLinkIsExternal = $attentionLink && str_starts_with($attentionLink, 'http') && !str_starts_with($attentionLink, site()->url());
 
 ?>
 
@@ -70,7 +71,7 @@ $attentionLink = $attentionActive ? $page->attentionLink()->toLinkUrl() : null;
         <<?= $attentionLink ? 'a' : 'div' ?>
             class="attention-badge"
             lang="de"
-            <?php if ($attentionLink): ?>href="<?= esc($attentionLink) ?>" target="_blank" rel="noopener"<?php endif; ?>
+            <?php if ($attentionLink): ?>href="<?= esc($attentionLink) ?>"<?php if ($attentionLinkIsExternal): ?> target="_blank" rel="noopener"<?php endif; ?><?php endif; ?>
         ><?= esc($page->attentionText()->value()) ?></<?= $attentionLink ? 'a' : 'div' ?>>
     <?php endif; ?>
 
