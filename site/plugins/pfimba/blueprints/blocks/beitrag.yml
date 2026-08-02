@@ -8,7 +8,6 @@ fields:
   titel:
     label: Titel
     type: text
-    required: true
 
   text_ausrichtung:
     label: Textausrichtung

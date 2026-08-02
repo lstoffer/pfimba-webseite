@@ -9,9 +9,11 @@
 
 <article class="beitrag beitrag--<?= esc($bildPosition) ?> beitrag--img-<?= esc($bildGroesse) ?> beitrag--text-<?= esc($textAlign) ?>">
 
-  <h3 class="beitrag-titel">
-    <?= esc($titel) ?>
-  </h3>
+  <?php if ($titel->isNotEmpty()): ?>
+    <h3 class="beitrag-titel">
+      <?= esc($titel) ?>
+    </h3>
+  <?php endif ?>
 
   <div class="beitrag-content">
 
