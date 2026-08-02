@@ -1,12 +1,20 @@
 .leiter {
-  display: grid;
-  grid-template-columns: 300px 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 
   padding: 2rem;
   border-radius: 6px;
   background: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+
+  text-align: center;
+}
+
+.leiter-foto {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 .leiter-foto img {
@@ -41,6 +49,7 @@
   margin-top: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 0.4rem;
 }
 
@@ -55,20 +64,4 @@
   font-family: "SuisseNeue Light";
   font-size: 20px;
   color: #000;
-}
-
-@media (max-width: 600px) {
-  .leiter {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .leiter-foto {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-
-  .leiter-kontakt {
-    align-items: center;
-  }
 }

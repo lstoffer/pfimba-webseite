@@ -88,3 +88,12 @@ fields:
       large: Groß
       full: Volle Breite
       fill: Füllt Fläche (Breite & Höhe)
+
+  link:
+    label: Link
+    type: link
+    options:
+      - url
+      - page
+      - email
+      - tel
