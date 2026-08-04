@@ -1,5 +1,6 @@
 <?php
 
+use Kirby\Cms\Blocks;
 use Kirby\Cms\File;
 use Kirby\Cms\Page;
 use Kirby\Content\Field;
@@ -22,6 +23,40 @@ function pfimbaGuardFileParent(File $file): void
     }
 }
 
+// "anlass" blocks only live inside a "jahresprogramm_jahr" wrapper block
+// (one per year) on the Jahresprogramm page, which itself can sit at the
+// top level or inside a one_col/two_col/three_col layout block. This
+// collects all "anlass" blocks regardless of how deep they are nested,
+// so the "next Anlass" teaser on the start page still finds them.
+function pfimbaCollectAnlassBlocks(Blocks $blocks): array
+{
+    $result = [];
+
+    foreach ($blocks as $block) {
+        if ($block->type() === 'anlass') {
+            $result[] = $block;
+            continue;
+        }
+
+        $nestedFields = match ($block->type()) {
+            'jahresprogramm_jahr' => ['anlaesse'],
+            'one_col' => ['spalteninhalt'],
+            'two_col' => ['content_left', 'content_right'],
+            'three_col' => ['content_left', 'content_center', 'content_right'],
+            default => [],
+        };
+
+        foreach ($nestedFields as $field) {
+            $result = [
+                ...$result,
+                ...pfimbaCollectAnlassBlocks($block->{$field}()->toBlocks()),
+            ];
+        }
+    }
+
+    return $result;
+}
+
 Kirby::plugin('pmr/pfimba', [
     'blueprints' => [
         'blocks/one_col' => __DIR__ . '/blueprints/blocks/one_col.yml',
@@ -30,6 +65,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/leiter' => __DIR__ . '/blueprints/blocks/leiter.yml',
         'blocks/aktivitaet' => __DIR__ . '/blueprints/blocks/aktivitaet.yml',
         'blocks/anlass' => __DIR__ . '/blueprints/blocks/anlass.yml',
+        'blocks/jahresprogramm_jahr' => __DIR__ . '/blueprints/blocks/jahresprogramm_jahr.yml',
         'blocks/google_fotos' => __DIR__ . '/blueprints/blocks/google_fotos.yml',
         'blocks/beitrag' => __DIR__ . '/blueprints/blocks/beitrag.yml',
         'blocks/quartalsprogramm' => __DIR__ . '/blueprints/blocks/quartalsprogramm.yml',
@@ -47,6 +83,7 @@ Kirby::plugin('pmr/pfimba', [
         'blocks/aktivitaet'  => __DIR__ . '/snippets/blocks/aktivitaet.php',
         'blocks/leiter'      => __DIR__ . '/snippets/blocks/leiter.php',
         'blocks/anlass'      => __DIR__ . '/snippets/blocks/anlass.php',
+        'blocks/jahresprogramm_jahr' => __DIR__ . '/snippets/blocks/jahresprogramm_jahr.php',
         'blocks/google_fotos'      => __DIR__ . '/snippets/blocks/google_fotos.php',
         'blocks/beitrag' => __DIR__ . '/snippets/blocks/beitrag.php',
         'blocks/quartalsprogramm' => __DIR__ . '/snippets/blocks/quartalsprogramm.php',

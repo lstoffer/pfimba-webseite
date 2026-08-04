@@ -9,18 +9,24 @@
         $jahresprogramm = page('page://mvq5nyzsti0nrqsu');
 
         if ($jahresprogramm) {
-            $nextAnlass = $jahresprogramm->aktivitaeten()->toBlocks()
-                ->filterBy('type', 'anlass')
-                ->filter(fn ($block) => $block->name()->isNotEmpty() && $block->datum()->isNotEmpty())
-                ->filter(function ($block) {
+            $anlaesse = array_filter(
+                pfimbaCollectAnlassBlocks($jahresprogramm->aktivitaeten()->toBlocks()),
+                function ($block) {
+                    if ($block->name()->isEmpty() || $block->datum()->isEmpty()) {
+                        return false;
+                    }
+
                     $ende = $block->mehrtaegig()->toBool() && $block->enddatum()->isNotEmpty()
                         ? $block->enddatum()->toDate()
                         : $block->datum()->toDate();
 
                     return $ende >= strtotime('today');
-                })
-                ->sortBy(fn ($block) => $block->datum()->toDate(), 'asc')
-                ->first();
+                }
+            );
+
+            usort($anlaesse, fn ($a, $b) => $a->datum()->toDate() <=> $b->datum()->toDate());
+
+            $nextAnlass = $anlaesse[0] ?? null;
         }
     }
 

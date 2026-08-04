@@ -9,7 +9,6 @@ fields:
     fieldsets:
       - aktivitaet
       - leiter
-      - anlass
       - google_fotos
       - beitrag
       - quartalsprogramm

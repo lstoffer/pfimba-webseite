@@ -1,0 +1,18 @@
+type: jahresprogramm_jahr
+title: Jahresprogramm
+label: "{{ jahr }}"
+preview: fields
+wysiwyg: true
+
+fields:
+  jahr:
+    label: Jahr
+    type: text
+    required: true
+
+  anlaesse:
+    label: Anlässe
+    type: blocks
+    pretty: true
+    fieldsets:
+      - anlass
