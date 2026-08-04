@@ -25,7 +25,7 @@
             <p>
                 <?= $contact->name() ?> <br>
                 <?= $contact->strasse() ?> <br>
-                <?= $contact->wohnort() ?>
+                <?= $contact->wohnhort() ?> <br>
                 <a class="email" href="mailto:<?= $contact->email() ?>"><?= $contact->email() ?></a>
             </p>
       </div>
