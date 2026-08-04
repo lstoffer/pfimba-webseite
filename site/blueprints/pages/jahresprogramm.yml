@@ -26,7 +26,10 @@ columns:
             type: blocks
             pretty: true
             fieldsets:
-              - anlass
+              - jahresprogramm_jahr
+              - one_col
+              - two_col
+              - three_col
   
   sidebar:
     width: 1/3
