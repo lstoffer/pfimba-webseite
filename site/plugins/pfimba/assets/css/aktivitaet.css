@@ -119,6 +119,15 @@
   font-weight: 400;
 }
 
+.aktivitaet-details .ort-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: -0.6rem 0 -0.6rem 0.4rem;
+  padding: 0.6rem;
+  color: var(--color-abteilung);
+}
+
 .aktivitaet-details .label-spaced,
 .aktivitaet-details .value-spaced {
   margin-top: 1rem;
