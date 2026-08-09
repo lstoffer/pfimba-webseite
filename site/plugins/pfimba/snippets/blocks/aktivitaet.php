@@ -33,6 +33,14 @@
         'pios'    => 'Zemme witer',
     ];
 
+    $stufenLabelMap = [
+        'abteilung' => 'Abteilung',
+        'biber'     => 'Biber',
+        'woelfe'    => 'Wölfe',
+        'pfadis'    => 'Pfadis',
+        'pios'      => 'Pios',
+    ];
+
     $selectedStufen = $block->stufen()->split();
 
     $primaryStufe = in_array('abteilung', $selectedStufen, true)
@@ -72,7 +80,7 @@
         <div class="aktivitaet-stufen">
             <?php foreach ($block->stufen()->split() as $stufe): ?>
                 <span class="stufe stufe-<?= esc($stufe) ?>">
-                    <?= esc(ucfirst($stufe)) ?>
+                    <?= esc($stufenLabelMap[$stufe] ?? ucfirst($stufe)) ?>
                 </span>
             <?php endforeach ?>
         </div>

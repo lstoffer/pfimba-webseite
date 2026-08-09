@@ -7,13 +7,12 @@ fields:
   foto:
     label: Foto
     type: files
-    min: 1
     max: 1
     layout: cards
     uploads:
       parent: page
-    accept:
-      extension: [jpg, jpeg, png, webp]
+      accept:
+        extension: [jpg, jpeg, png, webp]
 
   vorname:
     label: Vorname
@@ -48,7 +47,7 @@ fields:
       stufenleitung: Stufenleitung
       abteilungsleitung: Abteilungsleitung
       praesidium: Präsidium
-      finanzen: Fianzen
+      finanzen: Finanzen
       pfadiheime: Pfadiheime
       oeffentlichkeitsarbeit: Öffentlichkeitsarbeit
       aktuariat: Aktuariat

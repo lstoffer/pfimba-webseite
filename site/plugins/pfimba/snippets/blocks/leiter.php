@@ -7,6 +7,15 @@
   $telefon   = $block->telefon();
   $funktion  = $block->funktion();
 
+  $funktionLabelMap = [
+    'stufenleitung'          => 'Stufenleitung',
+    'abteilungsleitung'      => 'Abteilungsleitung',
+    'praesidium'             => 'Präsidium',
+    'finanzen'               => 'Finanzen',
+    'pfadiheime'             => 'Pfadiheime',
+    'oeffentlichkeitsarbeit' => 'Öffentlichkeitsarbeit',
+    'aktuariat'              => 'Aktuariat',
+  ];
 
   $name = $vorname . ' ' . $nachname;
   if($pfadiname->isNotEmpty()) {
@@ -34,7 +43,7 @@
 
     <?php if ($funktion->isNotEmpty()): ?>
       <div class="leiter-funktion">
-        <?= ucfirst(esc($funktion)) ?>
+        <?= esc($funktionLabelMap[$funktion->value()] ?? ucfirst($funktion)) ?>
       </div>
     <?php endif ?>
 
