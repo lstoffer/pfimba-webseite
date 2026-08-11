@@ -10,6 +10,12 @@ fields:
     type: text
     required: false
 
+  filterbar:
+    label: Suchfeld anzeigen
+    help: Zeigt ein Suchfeld an, mit dem die Zeilen der Tabelle über alle Spalten hinweg gefiltert werden können.
+    type: toggle
+    default: false
+
   spaltenInfo:
     type: info
     text: Nur Spalten mit ausgefülltem Titel werden angezeigt. Leere Spalten am Ende einfach nicht ausfüllen.

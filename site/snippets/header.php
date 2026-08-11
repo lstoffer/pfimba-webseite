@@ -37,6 +37,7 @@ $attentionLinkIsExternal = $attentionLink && str_starts_with($attentionLink, 'ht
     ])?>
     <?= js('/assets/js/navigation.js') ?>
     <?= js('/assets/js/galerie-filter.js') ?>
+    <?= js('/assets/js/tabelle-filter.js') ?>
     <link rel="icon" href="<?= url('/assets/images/faveicon_rgb.png') ?>">
 </head>
 

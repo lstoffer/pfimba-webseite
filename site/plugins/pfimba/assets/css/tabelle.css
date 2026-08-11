@@ -11,6 +11,56 @@
   font-size: 26px;
 }
 
+.tabelle-filter {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 0 1rem;
+}
+
+.tabelle-filter-input {
+  display: block;
+  width: 100%;
+  padding: 0.6rem 2.2rem 0.6rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  font-family: "SuisseNeue Light";
+  font-size: 16px;
+}
+
+.tabelle-filter-input:focus {
+  outline: none;
+  border-color: var(--color-abteilung);
+}
+
+.tabelle-filter-input::-webkit-search-cancel-button {
+  display: none;
+}
+
+.tabelle-filter-clear {
+  position: absolute;
+  top: 50%;
+  right: 0.6rem;
+  transform: translateY(-50%);
+
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: transparent;
+
+  font-size: 18px;
+  line-height: 1;
+  color: #999;
+  cursor: pointer;
+}
+
+.tabelle-filter-clear:hover,
+.tabelle-filter-clear:focus-visible {
+  color: var(--color-abteilung);
+}
+
 .tabelle-table {
   width: 100%;
   border-collapse: collapse;

@@ -12,6 +12,8 @@
     }
 
     $zeilen = $block->zeilen()->toStructure();
+    $filterbar = $block->filterbar()->toBool();
+    $filterId = 'tabelle-filter-' . $block->id();
 
     $stufe = $block->parent()->headerLine()->isNotEmpty()
         ? $block->parent()->headerLine()->value()
@@ -25,7 +27,26 @@
     <?php endif ?>
 
     <?php if (!empty($spalten) && $zeilen->isNotEmpty()): ?>
-        <table class="tabelle-table">
+
+        <?php if ($filterbar): ?>
+            <div class="tabelle-filter">
+                <input
+                    type="search"
+                    class="tabelle-filter-input"
+                    data-tabelle-filter="<?= esc($filterId) ?>"
+                    placeholder="Suchen …"
+                    aria-label="Tabelle durchsuchen"
+                >
+                <button
+                    type="button"
+                    class="tabelle-filter-clear"
+                    aria-label="Suche zurücksetzen"
+                    hidden
+                >&times;</button>
+            </div>
+        <?php endif ?>
+
+        <table class="tabelle-table" id="<?= esc($filterId) ?>">
             <thead>
                 <tr>
                     <?php foreach ($spalten as $label): ?>
