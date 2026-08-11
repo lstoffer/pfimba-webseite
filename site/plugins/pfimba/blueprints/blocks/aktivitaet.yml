@@ -28,14 +28,20 @@ fields:
 
   info:
     label: Zusatzinformation
-    type: text
+    type: writer
+    inline: true
+    marks:
+      - bold
     required: false
 
   besammlung:
     label: Besammlung
-    type: text
+    type: writer
+    inline: true
+    marks:
+      - bold
     required: true
-  
+
   besammlungsort:
     label: Besammlungsort (Link)
     type: link
@@ -43,17 +49,23 @@ fields:
 
   schluss:
     label: Schluss
-    type: text
+    type: writer
+    inline: true
+    marks:
+      - bold
     required: true
 
   schlussort:
     label: Schlussort (Link)
     type: link
     required: false
-  
+
   mitnehmen:
     label: Mitnehmen
-    type: text
+    type: writer
+    inline: true
+    marks:
+      - bold
     required: true
 
   leitperson:
