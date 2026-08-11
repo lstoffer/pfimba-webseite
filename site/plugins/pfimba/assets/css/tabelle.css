@@ -157,6 +157,7 @@
   .tabelle-table td {
     display: block;
     width: 100%;
+    box-sizing: border-box;
   }
 
   .tabelle-table tr {
@@ -165,6 +166,8 @@
 
   .tabelle-table td {
     padding: 0.3rem 1rem;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .tabelle-table td::before {
