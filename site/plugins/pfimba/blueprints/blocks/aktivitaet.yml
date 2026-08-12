@@ -32,6 +32,7 @@ fields:
     inline: true
     marks:
       - bold
+      - link
     required: false
 
   besammlung:
@@ -66,6 +67,7 @@ fields:
     inline: true
     marks:
       - bold
+      - link
     required: true
 
   leitperson:
